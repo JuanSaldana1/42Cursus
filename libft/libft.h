@@ -6,7 +6,7 @@
 /*   By: jsaldana <jsaldana@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/17 19:43:10 by jsaldana          #+#    #+#             */
-/*   Updated: 2022/08/31 19:43:07 by jsaldana         ###   ########.fr       */
+/*   Updated: 2022/08/31 19:52:29 by jsaldana         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -65,6 +65,17 @@ int		ft_isdigit(int c);
  */
 void	*ft_memcpy(const void *origin, void *destination, size_t bytesToCopy);
 
+/**
+ * @brief Substitutes the c character on the first n bytes of the str array.
+ * Takes the str chain, you define what character you want to write, and
+ * during how much positions will be substituted.
+ * 
+ * @param str 
+ * @param c 
+ * @param n 
+ * @return void* 
+ */
+void	*ft_memset(void *str, int c, size_t n);
 /**
  * @brief deprecated, use better memset(3)
  * This function erases or set to null or zero the first n bytes of the pointer

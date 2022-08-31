@@ -6,7 +6,13 @@
 /*   By: jsaldana <jsaldana@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/17 19:26:26 by jsaldana          #+#    #+#             */
-/*   Updated: 2022/08/17 19:26:26 by jsaldana         ###   ########.fr       */
+/*   Updated: 2022/08/31 19:53:26 by jsaldana         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
+
+void	*ft_memset(void *str, int c, size_t n)
+{
+	
+}

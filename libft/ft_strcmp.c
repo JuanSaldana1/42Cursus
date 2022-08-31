@@ -6,7 +6,7 @@
 /*   By: jsaldana <jsaldana@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/31 11:14:58 by jsaldana          #+#    #+#             */
-/*   Updated: 2022/08/31 12:13:23 by jsaldana         ###   ########.fr       */
+/*   Updated: 2022/08/31 19:47:35 by jsaldana         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,8 +25,8 @@ int	ft_strcmp(const char *str1, const char *str2, size_t n)
 	}
 }
 
-int	main(int argc, char const *argv[])
+/* int	main(int argc, char const *argv[])
 {
 	printf("%i", ft_strcmp("asdfghjkl", "asd", 10));
 	return (0);
-}
+} */
