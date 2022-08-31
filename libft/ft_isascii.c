@@ -1,32 +1,34 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_bzero.c                                         :+:      :+:    :+:   */
+/*   ft_isascii.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jsaldana <jsaldana@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/08/30 19:46:40 by jsaldana          #+#    #+#             */
-/*   Updated: 2022/08/31 17:50:04 by jsaldana         ###   ########.fr       */
+/*   Created: 2022/08/31 18:01:50 by jsaldana          #+#    #+#             */
+/*   Updated: 2022/08/31 18:20:56 by jsaldana         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_bzero(void *s, size_t n)
+int	ft_isascii(int c)
 {
-	size_t	count;
+	if (c >= 0 || c <= 127)
+		return (0);
+}
+
+/* int	main(int argc, char const *argv[])
+{
+	char	chain[] = ";0ñs~";
+	int		count;
 
 	count = 0;
-	while (count < n)
-		((char *)s)[count] = 0;
-}
-
-int	main(int argc, char const *argv[])
-{
-	unsigned char	str[50];
-
-	printf("%s", str);
-	ft_bzero(str, 2);
-	printf("%s", str);
+	while (chain[count])
+	{
+		printf("%d\n", ft_isascii(chain[count]));
+		count++;
+	}
 	return (0);
-}
+} */
+

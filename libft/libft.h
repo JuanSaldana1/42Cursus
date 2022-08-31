@@ -6,7 +6,7 @@
 /*   By: jsaldana <jsaldana@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/17 19:43:10 by jsaldana          #+#    #+#             */
-/*   Updated: 2022/08/31 17:14:56 by jsaldana         ###   ########.fr       */
+/*   Updated: 2022/08/31 17:37:43 by jsaldana         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,8 @@
 
 # include <unistd.h>
 # include <stdlib.h>
+# include <stdio.h>
+# include <unistd.h>
 # include <errno.h>
 # include <string.h>
 # include <fcntl.h>
@@ -38,8 +40,9 @@
 void	*ft_memcpy(const void *origin, void *destination, size_t bytesToCopy);
 
 /**
- * @brief deprecated, use better @memset(3)
- * This function erases or set to zero the first n bytes of the pointer given.
+ * @brief deprecated, use better memset(3)
+ * This function erases or set to null or zero the first n bytes of the pointer
+ * given.
  * 
  * @param s pointer
  * @param n number of bytes to erase.
