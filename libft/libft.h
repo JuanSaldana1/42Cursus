@@ -6,7 +6,7 @@
 /*   By: jsaldana <jsaldana@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/17 19:43:10 by jsaldana          #+#    #+#             */
-/*   Updated: 2022/08/31 17:37:43 by jsaldana         ###   ########.fr       */
+/*   Updated: 2022/08/31 19:43:07 by jsaldana         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,6 +21,32 @@
 # include <string.h>
 # include <fcntl.h>
 
+/**
+ * @brief Checks that the passed char is alphanumeric
+ * From a to Z and from 0 to 9.
+ * 
+ * @param c 
+ * @return int 
+ */
+int		ft_isalnum(int c);
+
+/**
+ * @brief Only checks that the passed parameter is an alphabetic char
+ * That is between 65 & 90 and 97 & 122
+ * 
+ * @param c 
+ * @return int 
+ */
+int		ft_isalpha(int c);
+
+/**
+ * @brief Checks that the passed value is an ascii character.
+ * 
+ * @param c 
+ * @return int 
+ */
+int		ft_isascii(int c);
+int		ft_isdigit(int c);
 /**
  * @brief The first array takes the value of the first n bytes of the second
  * array.
