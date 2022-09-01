@@ -1,5 +1,5 @@
 name: '42 Norminette'
-on:[push, pull_request]
+on: [push, pull_request]
 jobs:
   norminette_v3_job:
     runs-on: ubuntu-latest
