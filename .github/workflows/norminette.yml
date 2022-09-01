@@ -1,19 +1,9 @@
 name: '42 Norminette'
-description: 'Check 42 Norm with norminette linter'
-author: 'Reach <reach@42paris.fr>'
-branding:
-  icon: 'activity'
-  color: 'gray-dark'
-
-inputs:
-  flags:
-    description: 'Flags passed to norminette'
-    required: true
-    default: '.'
-runs:
-  using: 'docker'
-  image: 'docker://alexandregv/norminette:v3'
-  entrypoint: /bin/bash
-  args:
-    - -c
-    - norminette ${{ inputs.flags }}
+on:[push, pull_request]
+jobs:
+  norminette_v3_job:
+    runs-on: ubuntu-latest
+    name: Norminette V3
+    steps:
+      - uses: actions/checkout@v2
+      - uses: alexandregv/norminette-action@v3
