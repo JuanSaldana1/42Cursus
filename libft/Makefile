@@ -6,7 +6,7 @@
 #    By: jsaldana <jsaldana@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/08/17 19:45:50 by jsaldana          #+#    #+#              #
-#    Updated: 2022/09/01 09:45:07 by jsaldana         ###   ########.fr        #
+#    Updated: 2022/09/01 12:43:21 by jsaldana         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -24,19 +24,21 @@ SRC=		ft_bzero.c \
 OBJS = $(SRC:.c=.o)
 FLAGS = -Wall -Werror -Wextra
 
-all: $(NAME)
 
 $(NAME): $(OBJS)
 	@ar rc $(NAME) $(OBJS)
 	@echo "\033[92mLibrary Compiled"
 
-$(OJS) : $(SRC)
+$(OBJS) : $(SRC)
 	@gcc $(FLAGS) -c $< -o $@
-	
+
+all: $(NAME)
+
 run: all
 	@clear
 	@gcc main.c libft.a
 	@./a.out
+
 clean:
 	@rm -f $(OBJS)
 	@echo "\033[93mAll .o Files Removed"
