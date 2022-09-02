@@ -6,7 +6,7 @@
 #    By: jsaldana <jsaldana@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/08/17 19:45:50 by jsaldana          #+#    #+#              #
-#   Updated: 2022/09/02 11:47:52 by jsaldana         ###   ########.fr       # #
+#   Updated: 2022/09/02 18:04:29 by jsaldana         ###   ########.fr       # #
 #                                                                              #
 # **************************************************************************** #
 
@@ -20,9 +20,11 @@ SRC=	ft_bzero.c \
 		ft_isdigit.c \
 		ft_isprint.c \
 		ft_memcpy.c \
+		ft_memset.c \
 		ft_strchr.c \
 		ft_strlcpy.c \
 		ft_strncmp.c \
+		ft_toupper.c \
 
 OBJS = $(SRC:.c=.o)
 FLAGS = -Wall -Werror -Wextra

@@ -6,7 +6,7 @@
 /*   By: jsaldana <jsaldana@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/17 19:43:10 by jsaldana          #+#    #+#             */
-/*   Updated: 2022/09/02 12:56:15 by jsaldana         ###   ########.fr       */
+/*   Updated: 2022/09/02 18:04:29 by jsaldana         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -92,7 +92,7 @@ void	*ft_memcpy(const void *origin, void *destination, size_t bytesToCopy);
  * @param n 
  * @return void* 
  */
-// void	*ft_memset(void *str, int c, size_t n);
+void	*ft_memset(void *str, int c, size_t n);
 /**
  * @brief deprecated, use better memset(3)
  * This function erases or set to null or zero the first n bytes of the pointer
@@ -138,4 +138,11 @@ size_t	ft_strlcpy(char *restrict dest, const char *restrict src, size_t n);
  * @return int
  */
 int		ft_strncmp(const char *str1, const char *str2, size_t n);
+
+/**
+ * @brief Converts to uppercase the given char.
+ * @param c
+ * @return
+ */
+int		ft_toupper(int c);
 #endif
