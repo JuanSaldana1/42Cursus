@@ -6,7 +6,7 @@
 /*   By: jsaldana <jsaldana@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/17 19:43:10 by jsaldana          #+#    #+#             */
-/*   Updated: 2022/09/01 09:28:41 by jsaldana         ###   ########.fr       */
+/*   Updated: 2022/09/02 10:54:26 by jsaldana         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -75,7 +75,7 @@ void	*ft_memcpy(const void *origin, void *destination, size_t bytesToCopy);
  * @param n 
  * @return void* 
  */
-void	*ft_memset(void *str, int c, size_t n);
+// void	*ft_memset(void *str, int c, size_t n);
 /**
  * @brief deprecated, use better memset(3)
  * This function erases or set to null or zero the first n bytes of the pointer
