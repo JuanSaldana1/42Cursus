@@ -93,6 +93,15 @@ void	*ft_memcpy(const void *origin, void *destination, size_t bytesToCopy);
  * @return void* 
  */
 void	*ft_memset(void *str, int c, size_t n);
+
+/**
+ * @brief Prints every char is passed.
+ *
+ * @param c
+ * @param fd
+ */
+void	ft_putchar_fd(char c, int fd);
+
 /**
  * @brief deprecated, use better memset(3)
  * This function erases or set to null or zero the first n bytes of the pointer
