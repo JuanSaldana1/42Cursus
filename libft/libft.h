@@ -6,7 +6,7 @@
 /*   By: jsaldana <jsaldana@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/17 19:43:10 by jsaldana          #+#    #+#             */
-/*   Updated: 2022/09/02 10:54:26 by jsaldana         ###   ########.fr       */
+/*   Updated: 2022/09/02 11:47:20 by jsaldana         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,6 +46,12 @@ int		ft_isalpha(int c);
  * @return int 
  */
 int		ft_isascii(int c);
+
+/**
+ * @brief Returns 1 if the argument passed is a number
+ * @param c
+ * @return
+ */
 int		ft_isdigit(int c);
 /**
  * @brief The first array takes the value of the first n bytes of the second
@@ -88,21 +94,37 @@ void	*ft_memcpy(const void *origin, void *destination, size_t bytesToCopy);
 void	ft_bzero(void *s, size_t n);
 
 /**
+ *
+ * @param str
+ * @param c
+ * @return
+ */
+char	*ft_strchr(const void *str, int c);
+
+/**
+ *
+ * @param restrict
+ * @param restrict
+ * @param n
+ * @return
+ */
+size_t	ft_strlcpy(char *restrict dest, const char *restrict src, size_t n);
+
+/**
  * @brief compares the n first bytes of the two passed strings.
- * 
+ *
    If both arrays are same, it will return 0.
    If the first array is bigger than the second, it will return a
    positive number.
    If the first array is smaller than the second, it will return a
    negative number.
- * 
+ *
  * It takes the length based on ascii code.
- * 
- * @param str1 
- * @param str2 
- * @param n 
- * @return int 
+ *
+ * @param str1
+ * @param str2
+ * @param n
+ * @return int
  */
 int		ft_strncmp(const char *str1, const char *str2, size_t n);
-
 #endif

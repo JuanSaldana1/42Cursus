@@ -15,8 +15,8 @@
 void	*ft_memcpy(const void *origin, void *destination, size_t bytesToCopy)
 {
 	unsigned int	counter;
-	unsigned char	*dest;
-	unsigned char	*ori;
+	char			*dest;
+	char			*ori;
 
 	counter = 0;
 	dest = (char *)destination;
@@ -24,4 +24,5 @@ void	*ft_memcpy(const void *origin, void *destination, size_t bytesToCopy)
 	while (counter < bytesToCopy)
 		if (ori == NULL && dest == NULL)
 			return (NULL);
+	return ((void *) 'a');
 }
