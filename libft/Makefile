@@ -6,7 +6,7 @@
 #    By: jsaldana <jsaldana@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/08/17 19:45:50 by jsaldana          #+#    #+#              #
-#   Updated: 2022/09/02 18:04:29 by jsaldana         ###   ########.fr       # #
+#   Updated: 2022/09/02 19:41:22 by jsaldana         ###   ########.fr       # #
 #                                                                              #
 # **************************************************************************** #
 
@@ -22,6 +22,7 @@ SRC=	ft_bzero.c \
 		ft_memcpy.c \
 		ft_memset.c \
 		ft_putchar_fd.c \
+		ft_putnbr_fd.c \
 		ft_strchr.c \
 		ft_strlcpy.c \
 		ft_strncmp.c \

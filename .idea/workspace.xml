@@ -18,8 +18,8 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="36b20ec8-2a4c-4f26-bac0-f006028201f4" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/libft/ft_putchar_fd.c" afterDir="false" />
+    <list default="true" id="36b20ec8-2a4c-4f26-bac0-f006028201f4" name="Changes" comment="Works ft_putchar_fd.c">
+      <change afterPath="$PROJECT_DIR$/libft/ft_putnbr_fd.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/libft/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/libft/Makefile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/libft/libft.h" beforeDir="false" afterPath="$PROJECT_DIR$/libft/libft.h" afterDir="false" />
@@ -154,8 +154,16 @@
       <workItem from="1662111693390" duration="5317000" />
       <workItem from="1662133835643" duration="633000" />
       <workItem from="1662134479882" duration="2080000" />
-      <workItem from="1662139517711" duration="965000" />
+      <workItem from="1662139517711" duration="2888000" />
     </task>
+    <task id="LOCAL-00001" summary="Works ft_putchar_fd.c">
+      <created>1662141180806</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1662141180806</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -175,5 +183,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="Works ft_putchar_fd.c" />
+    <option name="LAST_COMMIT_MESSAGE" value="Works ft_putchar_fd.c" />
   </component>
 </project>
