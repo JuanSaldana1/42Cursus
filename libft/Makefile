@@ -6,7 +6,7 @@
 #    By: jsaldana <jsaldana@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/08/17 19:45:50 by jsaldana          #+#    #+#              #
-#    Updated: 2022/09/01 12:43:21 by jsaldana         ###   ########.fr        #
+#    Updated: 2022/09/02 10:47:56 by jsaldana         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -30,7 +30,7 @@ $(NAME): $(OBJS)
 	@echo "\033[92mLibrary Compiled"
 
 $(OBJS) : $(SRC)
-	@gcc $(FLAGS) -c $< -o $@
+	@gcc $(FLAGS) -c $(SRC)
 
 all: $(NAME)
 
