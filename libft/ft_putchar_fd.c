@@ -6,7 +6,7 @@
 /*   By: jsaldana <jsaldana@student.42.com>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/02 19:36:40 by jsaldana          #+#    #+#             */
-/*   Updated: 2022/09/02 19:36:40 by jsaldana         ###   ########.fr       */
+/*   Updated: 2022/09/02 19:45:03 by jsaldana         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,5 @@
 
 void	ft_putchar_fd(char c, int fd)
 {
-	while (fd--)
-		write(fd, c, 1);
+	write(fd, &c, 1);
 }
