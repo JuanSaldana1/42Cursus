@@ -6,7 +6,7 @@
 /*   By: jsaldana <jsaldana@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/17 19:43:10 by jsaldana          #+#    #+#             */
-/*   Updated: 2022/09/02 11:47:20 by jsaldana         ###   ########.fr       */
+/*   Updated: 2022/09/02 12:56:15 by jsaldana         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -53,6 +53,17 @@ int		ft_isascii(int c);
  * @return
  */
 int		ft_isdigit(int c);
+
+/**
+ * @brief If the passed argument can be printable
+ * (from 32 to 127 on decimal ascii)
+ *
+ * @param c
+ * @return 1 if is correct.\n
+ * 0 if is false.
+ */
+int		ft_isprint(char c);
+
 /**
  * @brief The first array takes the value of the first n bytes of the second
  * array.

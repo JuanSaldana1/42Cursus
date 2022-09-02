@@ -9,11 +9,7 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="36b20ec8-2a4c-4f26-bac0-f006028201f4" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/ft_isalpha.c" beforeDir="false" afterPath="$PROJECT_DIR$/libft/ft_isalpha.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/ft_isascii.c" beforeDir="false" afterPath="$PROJECT_DIR$/libft/ft_isascii.c" afterDir="false" />
-    </list>
+    <list default="true" id="36b20ec8-2a4c-4f26-bac0-f006028201f4" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -69,7 +65,7 @@
       <workItem from="1662109832976" duration="354000" />
       <workItem from="1662110227973" duration="145000" />
       <workItem from="1662110383376" duration="1298000" />
-      <workItem from="1662111693390" duration="2024000" />
+      <workItem from="1662111693390" duration="2757000" />
     </task>
     <servers />
   </component>
