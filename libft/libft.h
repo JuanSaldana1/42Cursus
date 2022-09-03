@@ -6,7 +6,7 @@
 /*   By: jsaldana <jsaldana@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/17 19:43:10 by jsaldana          #+#    #+#             */
-/*   Updated: 2022/09/03 16:37:23 by jsaldana         ###   ########.fr       */
+/*   Updated: 2022/09/03 17:28:02 by jsaldana         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -129,7 +129,15 @@ void	ft_putendl_fd(char *s, int fd);
 void	ft_putnbr_fd(int n, int fd);
 
 /**
- *
+ * @brief Foreach character of string s, it is applied the
+ * 'f' function.
+ * @param s
+ * @param f
+ */
+void	ft_striteri(char *s, void (*f)(unsigned int, char*));
+
+/**
+ * @brief
  * @param str
  * @param c
  * @return
@@ -169,4 +177,12 @@ int		ft_strncmp(const char *str1, const char *str2, size_t n);
  * @return
  */
 int		ft_toupper(int c);
+
+/**
+ * @brief converts to lowwercase the char given
+ *
+ * @param c
+ * @return
+ */
+int		ft_tolower(int c);
 #endif

@@ -1,31 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlcpy.c                                       :+:      :+:    :+:   */
+/*   ft_tolower.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jsaldana <jsaldana@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/09/01 09:51:46 by jsaldana          #+#    #+#             */
-/*   Updated: 2022/09/03 17:07:09 by jsaldana         ###   ########.fr       */
+/*   Created: 2022/09/03 16:54:04 by jsaldana          #+#    #+#             */
+/*   Updated: 2022/09/03 17:02:04 by jsaldana         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t	ft_strlcpy(char *restrict dest, const char *restrict src, size_t n)
+int	ft_tolower(int c)
 {
-	unsigned int	count;
-	size_t			i;
-
-	count = 0;
-	while (src[count] != '\0')
-		count++;
-	i = 0;
-	while (src[i] != '\0' && i < (n - 1))
-	{
-		dest[i] = src[i];
-		++i;
-	}
-	dest[i] = '\0';
-	return ((size_t)count);
+	if (c >= 65 && c <= 90)
+		return (c + 32);
+	return (c);
 }
