@@ -1,28 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memcpy.c                                        :+:      :+:    :+:   */
+/*   ft_putendl_fd.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jsaldana <jsaldana@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/08/17 19:29:01 by jsaldana          #+#    #+#             */
-/*   Updated: 2022/09/03 16:35:47 by jsaldana         ###   ########.fr       */
+/*   Created: 2022/09/03 16:16:25 by jsaldana          #+#    #+#             */
+/*   Updated: 2022/09/03 16:27:51 by jsaldana         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_memcpy(void *origin, void *destination, size_t bytesToCopy)
+void	ft_putendl_fd(char *s, int fd)
 {
-	size_t	i;
+	int	count;
 
-	if (!origin && !destination)
-		return (0);
-	i = 0;
-	while (i < bytesToCopy)
+	count = 0;
+	while (s[count])
 	{
-		((unsigned char *)origin)[i] = ((unsigned char *)destination)[i];
-		i++;
+		write(fd, &s[count], 1);
+		count++;
 	}
-	return (origin);
+	write(1, "\n", 1);
 }

@@ -6,7 +6,7 @@
 /*   By: jsaldana <jsaldana@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/17 19:43:10 by jsaldana          #+#    #+#             */
-/*   Updated: 2022/09/02 19:41:22 by jsaldana         ###   ########.fr       */
+/*   Updated: 2022/09/03 16:37:23 by jsaldana         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,6 +20,16 @@
 # include <errno.h>
 # include <string.h>
 # include <fcntl.h>
+/**
+ * @brief deprecated, use better memset(3)
+ * This function erases or set to null or zero the first n bytes of the pointer
+ * given.
+ *
+ * @param s pointer
+ * @param n number of bytes to erase.
+ *
+ */
+void	ft_bzero(void *s, size_t n);
 
 /**
  * @brief Checks that the passed char is alphanumeric
@@ -80,7 +90,7 @@ int		ft_isprint(char c);
  * @param bytesToCopy 
  * @return void* 
  */
-void	*ft_memcpy(const void *origin, void *destination, size_t bytesToCopy);
+void	*ft_memcpy(void *origin, void *destination, size_t bytesToCopy);
 
 /**
  * @brief Substitutes the c character on the first n bytes of the str array.
@@ -103,23 +113,20 @@ void	*ft_memset(void *str, int c, size_t n);
 void	ft_putchar_fd(char c, int fd);
 
 /**
+ * @brief Sends the string s to thr given file descriptor,
+ * followed by line break.
+ * @param s
+ * @param fd
+ */
+void	ft_putendl_fd(char *s, int fd);
+
+/**
  * @brief Prints the number
  *
  * @param n
  * @param fd
  */
 void	ft_putnbr_fd(int n, int fd);
-
-/**
- * @brief deprecated, use better memset(3)
- * This function erases or set to null or zero the first n bytes of the pointer
- * given.
- * 
- * @param s pointer
- * @param n number of bytes to erase.
- * 
- */
-void	ft_bzero(void *s, size_t n);
 
 /**
  *

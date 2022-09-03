@@ -6,7 +6,7 @@
 /*   By: jsaldana <jsaldana@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/02 17:56:17 by jsaldana          #+#    #+#             */
-/*   Updated: 2022/09/02 18:27:25 by jsaldana         ###   ########.fr       */
+/*   Updated: 2022/09/03 16:49:31 by jsaldana         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,5 +14,7 @@
 
 int	ft_toupper(int c)
 {
-	return (c - 32);
+	if (c >= 97 && c <= 122)
+		return (c - 32);
+	return (c);
 }
