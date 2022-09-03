@@ -27,5 +27,5 @@ size_t	ft_strlcpy(char *restrict dest, const char *restrict src, size_t n)
 		++i;
 	}
 	dest[i] = '\0';
-	return (count);
+	return ((size_t)count);
 }
