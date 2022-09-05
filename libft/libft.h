@@ -6,7 +6,7 @@
 /*   By: jsaldana <jsaldana@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/17 19:43:10 by jsaldana          #+#    #+#             */
-/*   Updated: 2022/09/05 11:37:39 by jsaldana         ###   ########.fr       */
+/*   Updated: 2022/09/05 11:45:04 by jsaldana         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -191,18 +191,26 @@ int		ft_strncmp(const char *str1, const char *str2, size_t n);
 char	*ft_strtrim(char const *s1, char const *set); */
 
 /**
- * @brief Converts to uppercase the given char.
- * @param c
+ * @brief
+ *
+ * @param s
+ * @param start
+ * @param len
  * @return
  */
-int		ft_toupper(int c);
-
+char	*ft_substr(char const *s, unsigned int start, size_t len);
 /**
- * @brief Converts to lowercase the char given
+ * @brief Converts to lowercase the char given.
  *
  * @param c
  * @return
  */
 int		ft_tolower(int c);
 
+/**
+ * @brief Converts to uppercase the given char.
+ * @param c
+ * @return
+ */
+int		ft_toupper(int c);
 #endif

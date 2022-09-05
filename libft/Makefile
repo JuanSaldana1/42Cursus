@@ -6,7 +6,7 @@
 #    By: jsaldana <jsaldana@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/08/17 19:45:50 by jsaldana          #+#    #+#              #
-#   Updated: 2022/09/05 09:56:10 by jsaldana         ###   ########.fr       # #
+#   Updated: 2022/09/05 12:06:56 by jsaldana         ###   ########.fr         #
 #                                                                              #
 # **************************************************************************** #
 
@@ -29,6 +29,7 @@ SRC=	ft_bzero.c \
 		ft_strlcpy.c \
 		ft_strlen.c \
 		ft_strncmp.c \
+		ft_substr.c \
 		ft_toupper.c \
 		ft_tolower.c \
 
@@ -45,10 +46,10 @@ $(OBJS) : $(SRC)
 
 all: $(NAME)
 
-run: all
-	@clear
-	@gcc main.c libft.a
-	@./a.out
+#run: all
+#	@clear
+#	@gcc main.c libft.a
+#	@./a.out
 
 clean:
 	@rm -f $(OBJS)
