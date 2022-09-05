@@ -6,7 +6,7 @@
 /*   By: jsaldana <jsaldana@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/17 19:43:10 by jsaldana          #+#    #+#             */
-/*   Updated: 2022/09/05 11:32:38 by jsaldana         ###   ########.fr       */
+/*   Updated: 2022/09/05 11:37:39 by jsaldana         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,8 +20,9 @@
 # include <errno.h>
 # include <string.h>
 # include <fcntl.h>
+
 /**
- * @brief deprecated, use better memset(3)
+ * @brief Deprecated, use better memset(3).\n
  * This function erases or set to null or zero the first n bytes of the pointer
  * given.
  *
@@ -42,7 +43,7 @@ int		ft_isalnum(int c);
 
 /**
  * @brief Only checks that the passed parameter is an alphabetic char
- * That is between 65 & 90 and 97 & 122
+ * That is between 65 & 90 and 97 & 122.
  * 
  * @param c 
  * @return int 
@@ -58,7 +59,7 @@ int		ft_isalpha(int c);
 int		ft_isascii(int c);
 
 /**
- * @brief Returns 1 if the argument passed is a number
+ * @brief Returns 1 if the argument passed is a number.
  * @param c
  * @return
  */
@@ -79,7 +80,7 @@ int		ft_isprint(char c);
  * array.
  * If the first array and the second are null, returns null.
  * 
- * inside the function, I create a counter that works while is lower than the
+ * Inside the function, I create a counter that works while is lower than the
  * passed bytes.
  * 
  * @note ¿Do I need an aux var?
@@ -129,8 +130,7 @@ void	ft_putendl_fd(char *s, int fd);
 void	ft_putnbr_fd(int n, int fd);
 
 /**
- * @brief Foreach character of string s, it is applied the
- * 'f' function.
+ * @brief Foreach character of string s, it is applied the 'f' function.
  * @param s
  * @param f
  */
@@ -155,7 +155,7 @@ char	*ft_strchr(const void *str, int c);
 size_t	ft_strlcpy(char *dest, const char *src, size_t n);
 
 /**
- * @brief Returns the length of the giveen array
+ * @brief Returns the length of the given array.
  *
  * @param str
  * @return
@@ -163,13 +163,13 @@ size_t	ft_strlcpy(char *dest, const char *src, size_t n);
 size_t	ft_strlen(const char *str);
 
 /**
- * @brief compares the n first bytes of the two passed strings.
+ * @brief Compares the n first bytes of the two passed strings.
  *
-   If both arrays are same, it will return 0.
+   If both arrays are same, it will return 0.\n
    If the first array is bigger than the second, it will return a
-   positive number.
+   positive number.\n
    If the first array is smaller than the second, it will return a
-   negative number.
+   negative number.\n
  *
  * It takes the length based on ascii code.
  *
@@ -187,8 +187,9 @@ int		ft_strncmp(const char *str1, const char *str2, size_t n);
  * @param s1
  * @param set
  * @return s1 cut
- */
-char	*ft_strtrim(char const *s1, char const *set);
+
+char	*ft_strtrim(char const *s1, char const *set); */
+
 /**
  * @brief Converts to uppercase the given char.
  * @param c
@@ -197,10 +198,11 @@ char	*ft_strtrim(char const *s1, char const *set);
 int		ft_toupper(int c);
 
 /**
- * @brief converts to lowwercase the char given
+ * @brief Converts to lowercase the char given
  *
  * @param c
  * @return
  */
 int		ft_tolower(int c);
+
 #endif
