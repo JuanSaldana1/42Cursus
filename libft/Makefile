@@ -6,7 +6,7 @@
 #    By: jsaldana <jsaldana@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/08/17 19:45:50 by jsaldana          #+#    #+#              #
-#   Updated: 2022/09/05 12:06:56 by jsaldana         ###   ########.fr         #
+#   Updated: 2022/09/05 16:25:08 by jsaldana         ###   ########.fr       # #
 #                                                                              #
 # **************************************************************************** #
 
@@ -24,14 +24,15 @@ SRC=	ft_bzero.c \
 		ft_putchar_fd.c \
 		ft_putendl_fd.c \
 		ft_putnbr_fd.c \
-		ft_striteri.c \
 		ft_strchr.c \
+		ft_striteri.c \
+		ft_strjoin.c \
 		ft_strlcpy.c \
 		ft_strlen.c \
 		ft_strncmp.c \
 		ft_substr.c \
-		ft_toupper.c \
 		ft_tolower.c \
+		ft_toupper.c \
 
 OBJS = $(SRC:.c=.o)
 FLAGS = -Wall -Werror -Wextra

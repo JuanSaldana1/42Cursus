@@ -137,6 +137,14 @@ void	ft_putnbr_fd(int n, int fd);
 void	ft_striteri(char *s, void (*f)(unsigned int, char*));
 
 /**
+ *
+ * @param s1
+ * @param s2
+ * @return
+ */
+char	*ft_strjoin(char const *s1, char const *s2);
+
+/**
  * @brief
  * @param str
  * @param c
