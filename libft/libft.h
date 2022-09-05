@@ -6,7 +6,7 @@
 /*   By: jsaldana <jsaldana@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/17 19:43:10 by jsaldana          #+#    #+#             */
-/*   Updated: 2022/09/03 17:28:02 by jsaldana         ###   ########.fr       */
+/*   Updated: 2022/09/05 11:32:38 by jsaldana         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -145,13 +145,22 @@ void	ft_striteri(char *s, void (*f)(unsigned int, char*));
 char	*ft_strchr(const void *str, int c);
 
 /**
+ * @brief Copies or  the first n bytes of src on dst. src does not change.
  *
  * @param restrict
  * @param restrict
  * @param n
+ * @return Measures the length of src with ft_strlen(src).
+ */
+size_t	ft_strlcpy(char *dest, const char *src, size_t n);
+
+/**
+ * @brief Returns the length of the giveen array
+ *
+ * @param str
  * @return
  */
-size_t	ft_strlcpy(char *restrict dest, const char *restrict src, size_t n);
+size_t	ft_strlen(const char *str);
 
 /**
  * @brief compares the n first bytes of the two passed strings.
@@ -171,6 +180,15 @@ size_t	ft_strlcpy(char *restrict dest, const char *restrict src, size_t n);
  */
 int		ft_strncmp(const char *str1, const char *str2, size_t n);
 
+/**
+ * @brief Removes all characters from set string from the start and the end
+ * of s1, finding a character not owning to set.
+ *
+ * @param s1
+ * @param set
+ * @return s1 cut
+ */
+char	*ft_strtrim(char const *s1, char const *set);
 /**
  * @brief Converts to uppercase the given char.
  * @param c

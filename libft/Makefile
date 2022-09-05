@@ -6,7 +6,7 @@
 #    By: jsaldana <jsaldana@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/08/17 19:45:50 by jsaldana          #+#    #+#              #
-#   Updated: 2022/09/03 17:29:00 by jsaldana         ###   ########.fr       # #
+#   Updated: 2022/09/05 09:56:10 by jsaldana         ###   ########.fr       # #
 #                                                                              #
 # **************************************************************************** #
 
@@ -27,7 +27,9 @@ SRC=	ft_bzero.c \
 		ft_striteri.c \
 		ft_strchr.c \
 		ft_strlcpy.c \
+		ft_strlen.c \
 		ft_strncmp.c \
+		ft_strtrim.c \
 		ft_toupper.c \
 		ft_tolower.c \
 
