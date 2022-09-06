@@ -6,7 +6,7 @@
 /*   By: jsaldana <jsaldana@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/31 11:14:58 by jsaldana          #+#    #+#             */
-/*   Updated: 2022/09/01 09:43:02 by jsaldana         ###   ########.fr       */
+/*   Updated: 2022/09/06 11:15:39 by jsaldana         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,19 +15,18 @@
 int	ft_strncmp(const char *str1, const char *str2, size_t n)
 {
 	unsigned int	count;
+	int				result;
 
 	count = 0;
 	while (count < (n - 1))
 	{
-		if (str1[count] == str2[count])
-			return (0);
+		if (ft_strlen(str1) == ft_strlen(str2))
+			result = (0);
+		else if (ft_strlen(str1) > ft_strlen(str2))
+			result = ((int)(ft_strlen(str1) - ft_strlen(str2)));
+		else if (ft_strlen(str2) > ft_strlen(str1))
+			result = ((int)(ft_strlen(str2) - ft_strlen(str1)));
 		count++;
 	}
-	return (count);
+	return (result);
 }
-
-/* int	main(int argc, char const *argv[])
-{
-	printf("%i", ft_strcmp("asdfghjkl", "asd", 10));
-	return (0);
-} */
