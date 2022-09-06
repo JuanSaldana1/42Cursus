@@ -25,9 +25,3 @@ char	*ft_strchr(const void *str, int c)
 	}
 	return (s);
 }
-
-/* int	main(int argc, char const *argv[])
-{
-	printf("%s", ft_strchr("ASD", 'S'));
-	return (0);
-} */

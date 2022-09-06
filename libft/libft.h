@@ -6,7 +6,7 @@
 /*   By: jsaldana <jsaldana@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/17 19:43:10 by jsaldana          #+#    #+#             */
-/*   Updated: 2022/09/05 11:45:04 by jsaldana         ###   ########.fr       */
+/*   Updated: 2022/09/06 10:52:47 by jsaldana         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -153,6 +153,16 @@ char	*ft_strjoin(char const *s1, char const *s2);
 char	*ft_strchr(const void *str, int c);
 
 /**
+ * @brief Concatenates destination & source.
+ *
+ * @param dst
+ * @param src
+ * @param destsize
+ * @return
+
+size_t	ft_strlcat(char *dst, const char *src, size_t destsize); */
+
+/**
  * @brief Copies or  the first n bytes of src on dst. src does not change.
  *
  * @param restrict
@@ -199,6 +209,15 @@ int		ft_strncmp(const char *str1, const char *str2, size_t n);
 char	*ft_strtrim(char const *s1, char const *set); */
 
 /**
+ * @brief Searches for the last c character on s string
+ *
+ * @param s
+ * @param c
+ * @return
+ */
+char	*ft_strrchr(const char *s, int c);
+
+/**
  * @brief
  *
  * @param s
@@ -207,6 +226,7 @@ char	*ft_strtrim(char const *s1, char const *set); */
  * @return
  */
 char	*ft_substr(char const *s, unsigned int start, size_t len);
+
 /**
  * @brief Converts to lowercase the char given.
  *
