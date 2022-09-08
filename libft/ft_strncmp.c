@@ -6,12 +6,11 @@
 /*   By: jsaldana <jsaldana@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/31 11:14:58 by jsaldana          #+#    #+#             */
-/*   Updated: 2022/09/08 12:04:08 by jsaldana         ###   ########.fr       */
+/*   Updated: 2022/09/08 12:04:35 by jsaldana         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-//#include <stdio.h>
 
 int	ft_strncmp(const char *str1, const char *str2, size_t n)
 {
@@ -35,9 +34,3 @@ int	ft_strncmp(const char *str1, const char *str2, size_t n)
 	}
 	return (0);
 }
-/*
-int main (void)
-{
-	printf("%d\n", ft_strncmp("test", "testss", 7));
-}
-*/
