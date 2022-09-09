@@ -6,7 +6,7 @@
 /*   By: jsaldana <jsaldana@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/17 19:43:10 by jsaldana          #+#    #+#             */
-/*   Updated: 2022/09/06 10:52:47 by jsaldana         ###   ########.fr       */
+/*   Updated: 2022/09/09 10:49:46 by jsaldana         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -152,6 +152,13 @@ char	*ft_strjoin(char const *s1, char const *s2);
  */
 char	*ft_strchr(const void *str, int c);
 
+/**
+ *
+ * @param s1
+ * @param set
+ * @return
+ */
+char	*ft_strtrim(char const *s1, char const *set);
 /**
  * @brief Concatenates destination & source.
  *

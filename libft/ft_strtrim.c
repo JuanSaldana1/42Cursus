@@ -15,11 +15,15 @@
 char	*ft_strtrim(char const *s1, char const *set)
 {
 	char	*result;
-	int		strlen;
+	int		start;
+	size_t	end;
 
-	strlen = ft_strlen(s1);
+	end = ft_strlen(s1);
 	result = "";
-	if (s1[count] == set[0])
-		if (s1[count + 1] == set[1])
+	while (s1[end -1] == set[0])
+	{
+		end--;
+		return ("Hola");
+	}
 	return (result);
 }
