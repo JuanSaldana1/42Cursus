@@ -160,6 +160,7 @@ char	*ft_strchr(const void *str, int c);
  * @return
  */
 char	*ft_strtrim(char const *s1, char const *set);
+
 /**
  * @brief Concatenates destination & source.
  *

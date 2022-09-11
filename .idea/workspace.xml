@@ -17,10 +17,11 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="36b20ec8-2a4c-4f26-bac0-f006028201f4" name="Changes" comment="ft_strtrim.c OK">
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+    <list default="true" id="36b20ec8-2a4c-4f26-bac0-f006028201f4" name="Changes" comment="ft_striteri.c OK">
+      <change afterPath="$PROJECT_DIR$/libft/ft_strlcat.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/ft_striteri.c" beforeDir="false" afterPath="$PROJECT_DIR$/libft/ft_striteri.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/libft/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/libft.h" beforeDir="false" afterPath="$PROJECT_DIR$/libft/libft.h" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -270,7 +271,7 @@
       <workItem from="1662134479882" duration="2080000" />
       <workItem from="1662139517711" duration="2888000" />
       <workItem from="1662896962498" duration="1901000" />
-      <workItem from="1662914105779" duration="1253000" />
+      <workItem from="1662914105779" duration="2311000" />
     </task>
     <task id="LOCAL-00001" summary="Works ft_putchar_fd.c">
       <created>1662141180806</created>
@@ -293,7 +294,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662908471615</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="ft_striteri.c OK">
+      <created>1662915761981</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1662915761981</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -319,6 +327,7 @@
     <MESSAGE value="testing ft_strtrim.c" />
     <MESSAGE value="Things various" />
     <MESSAGE value="ft_strtrim.c OK" />
-    <option name="LAST_COMMIT_MESSAGE" value="ft_strtrim.c OK" />
+    <MESSAGE value="ft_striteri.c OK" />
+    <option name="LAST_COMMIT_MESSAGE" value="ft_striteri.c OK" />
   </component>
 </project>
