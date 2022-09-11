@@ -6,7 +6,7 @@
 /*   By: jsaldana <jsaldana@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/08 12:10:32 by jsaldana          #+#    #+#             */
-/*   Updated: 2022/09/11 14:29:50 by                  ###   ########.fr       */
+/*   Updated: 2022/09/11 16:57:32 by jsaldana         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@
  * @param set
  * @return
  */
-static size_t		ft_check_char(char c, char const *set)
+static size_t	ft_check_char(char c, char const *set)
 {
 	size_t		i;
 
@@ -32,7 +32,7 @@ static size_t		ft_check_char(char c, char const *set)
 	return (0);
 }
 
-char		*ft_strtrim(char const *s1, char const *set)
+char	*ft_strtrim(char const *s1, char const *set)
 {
 	char		*str;
 	size_t		i;
@@ -55,11 +55,4 @@ char		*ft_strtrim(char const *s1, char const *set)
 		str[i++] = s1[start++];
 	str[i] = 0;
 	return (str);
-}
-
-
-int	main(void)
-{
-	printf("%s", ft_strtrim("_______holllaaaaa______", "_"));
-	return (0);
 }
