@@ -1,0 +1,26 @@
+Index: .idea/42Cursus2.iml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/42Cursus2.iml b/.idea/42Cursus2.iml
+deleted file mode 100644
+--- a/.idea/42Cursus2.iml	
++++ /dev/null	
+@@ -1,2 +0,0 @@
+-<?xml version="1.0" encoding="UTF-8"?>
+-<module classpath="External" type="CPP_MODULE" version="4" />
+\ No newline at end of file
+Index: .idea/42Cursus2.iml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/42Cursus2.iml b/.idea/42Cursus2.iml
+deleted file mode 100644
+--- a/.idea/42Cursus2.iml	
++++ /dev/null	
+@@ -1,2 +0,0 @@
+-<?xml version="1.0" encoding="UTF-8"?>
+-<module classpath="External" type="CPP_MODULE" version="4" />
+\ No newline at end of file
