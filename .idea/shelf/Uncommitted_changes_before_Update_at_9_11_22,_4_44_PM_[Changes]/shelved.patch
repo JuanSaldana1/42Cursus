@@ -1,0 +1,191 @@
+Index: libft/ft_strjoin.c
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>/* ************************************************************************** */\n/*                                                                            */\n/*                                                        :::      ::::::::   */\n/*   ft_strjoin.c                                       :+:      :+:    :+:   */\n/*                                                    +:+ +:+         +:+     */\n/*   By: jsaldana <jsaldana@student.42.fr>          +#+  +:+       +#+        */\n/*                                                +#+#+#+#+#+   +#+           */\n/*   Created: 2022/09/05 16:14:01 by jsaldana          #+#    #+#             */\n/*   Updated: 2022/09/05 16:47:27 by jsaldana         ###   ########.fr       */\n/*                                                                            */\n/* ************************************************************************** */\n\n#include \"libft.h\"\n\nchar\t*ft_strjoin(char const *s1, char const *s2)\n{\n\tchar\t*dest;\n\tint\t\tcount_s1;\n\tint\t\tcount_s2;\n\tint\t\tcount;\n\n\tif (s1 && s2)\n\t{\n\t\tcount_s1 = (int) ft_strlen(s1);\n\t\tcount_s2 = (int) ft_strlen(s2);\n\t\tdest = (char *) malloc((count_s1 + count_s2 + 1) * sizeof(char));\n\t\tif (dest == NULL)\n\t\t\treturn (NULL);\n\t\tcount = -1;\n\t\twhile (s1[++count])\n\t\t\tdest[count] = s1[count];\n\t\tcount = -1;\n\t\twhile (s2[++count])\n\t\t{\n\t\t\tdest[count_s1] = s2[count];\n\t\t\tcount_s1++;\n\t\t}\n\t\tdest[count_s1] = '\\0';\n\t\treturn (dest);\n\t}\n\treturn (NULL);\n}\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/libft/ft_strjoin.c b/libft/ft_strjoin.c
+--- a/libft/ft_strjoin.c	(revision f707de11c69fdbe3a0ae2394983fa69a940da45b)
++++ b/libft/ft_strjoin.c	(date 1662904614000)
+@@ -6,7 +6,7 @@
+ /*   By: jsaldana <jsaldana@student.42.fr>          +#+  +:+       +#+        */
+ /*                                                +#+#+#+#+#+   +#+           */
+ /*   Created: 2022/09/05 16:14:01 by jsaldana          #+#    #+#             */
+-/*   Updated: 2022/09/05 16:47:27 by jsaldana         ###   ########.fr       */
++/*   Updated: 2022/09/11 15:56:54 by jsaldana         ###   ########.fr       */
+ /*                                                                            */
+ /* ************************************************************************** */
+ 
+@@ -40,3 +40,13 @@
+ 	}
+ 	return (NULL);
+ }
++
++int main(void)
++{
++	char *str1 = "This is a test";
++	char *str2 = "string";
++	char *ptr = ft_strjoin(str1, str2);
++
++	free(ptr);
++	return (0);
++}
+Index: .idea/42Cursus2.iml
+===================================================================
+diff --git a/.idea/42Cursus2.iml b/.idea/42Cursus2.iml
+deleted file mode 100644
+--- a/.idea/42Cursus2.iml	(revision f707de11c69fdbe3a0ae2394983fa69a940da45b)
++++ /dev/null	(revision f707de11c69fdbe3a0ae2394983fa69a940da45b)
+@@ -1,2 +0,0 @@
+-<?xml version="1.0" encoding="UTF-8"?>
+-<module classpath="External" type="CPP_MODULE" version="4" />
+\ No newline at end of file
+Index: .idea/modules.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<project version=\"4\">\n\t<component name=\"ProjectModuleManager\">\n\t\t<modules>\n\t\t\t<module fileurl=\"file://$PROJECT_DIR$/.idea/42Cursus.iml\" filepath=\"$PROJECT_DIR$/.idea/42Cursus.iml\" />\n\t\t\t<module fileurl=\"file://$PROJECT_DIR$/.idea/42Cursus2.iml\" filepath=\"$PROJECT_DIR$/.idea/42Cursus2.iml\" />\n\t\t</modules>\n\t</component>\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/modules.xml b/.idea/modules.xml
+--- a/.idea/modules.xml	(revision f707de11c69fdbe3a0ae2394983fa69a940da45b)
++++ b/.idea/modules.xml	(date 1662899170000)
+@@ -1,9 +1,8 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ <project version="4">
+-	<component name="ProjectModuleManager">
+-		<modules>
+-			<module fileurl="file://$PROJECT_DIR$/.idea/42Cursus.iml" filepath="$PROJECT_DIR$/.idea/42Cursus.iml" />
+-			<module fileurl="file://$PROJECT_DIR$/.idea/42Cursus2.iml" filepath="$PROJECT_DIR$/.idea/42Cursus2.iml" />
+-		</modules>
+-	</component>
++  <component name="ProjectModuleManager">
++    <modules>
++      <module fileurl="file://$PROJECT_DIR$/.idea/42Cursus.iml" filepath="$PROJECT_DIR$/.idea/42Cursus.iml" />
++    </modules>
++  </component>
+ </project>
+\ No newline at end of file
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<project version=\"4\">\n  <component name=\"AutoImportSettings\">\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\n  </component>\n  <component name=\"CMakeRunConfigurationManager\" shouldGenerate=\"true\" shouldDeleteObsolete=\"true\">\n    <generated>\n      <config projectName=\"42Cursus\" targetName=\"re\" />\n      <config projectName=\"42Cursus\" targetName=\"run\" />\n      <config projectName=\"42Cursus\" targetName=\"all\" />\n      <config projectName=\"42Cursus\" targetName=\"fclean\" />\n      <config projectName=\"42Cursus\" targetName=\"libft.a\" />\n    </generated>\n  </component>\n  <component name=\"CMakeSettings\">\n    <configurations>\n      <configuration PROFILE_NAME=\"Debug\" ENABLED=\"true\" CONFIG_NAME=\"Debug\" />\n    </configurations>\n  </component>\n  <component name=\"ChangeListManager\">\n    <list default=\"true\" id=\"36b20ec8-2a4c-4f26-bac0-f006028201f4\" name=\"Changes\" comment=\"Works ft_putchar_fd.c\">\n      <change beforePath=\"$PROJECT_DIR$/.github/workflows/norminette.yml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.github/workflows/norminette.yml\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/.idea/misc.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/misc.xml\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/.idea/modules.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/modules.xml\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/.idea/vcs.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/vcs.xml\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/libft/ft_strtrim.c\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/libft/ft_strtrim.c\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/libft/libft.h\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/libft/libft.h\" afterDir=\"false\" />\n    </list>\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\n  </component>\n  <component name=\"ClangdSettings\">\n    <option name=\"formatViaClangd\" value=\"false\" />\n  </component>\n  <component name=\"ExternalProjectsData\">\n    <projectState path=\"$PROJECT_DIR$/libft\">\n      <ProjectState />\n    </projectState>\n  </component>\n  <component name=\"Git.Settings\">\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\n  </component>\n  <component name=\"MakefileLocalSettings\">\n    <option name=\"availableProjects\">\n      <map>\n        <entry>\n          <key>\n            <ExternalProjectPojo>\n              <option name=\"name\" value=\"42Cursus\" />\n              <option name=\"path\" value=\"$PROJECT_DIR$/libft\" />\n            </ExternalProjectPojo>\n          </key>\n          <value>\n            <list>\n              <ExternalProjectPojo>\n                <option name=\"name\" value=\"42Cursus\" />\n                <option name=\"path\" value=\"$PROJECT_DIR$/libft\" />\n              </ExternalProjectPojo>\n            </list>\n          </value>\n        </entry>\n      </map>\n    </option>\n    <option name=\"projectSyncType\">\n      <map>\n        <entry key=\"$PROJECT_DIR$/libft\" value=\"RE_IMPORT\" />\n      </map>\n    </option>\n  </component>\n  <component name=\"ProjectId\" id=\"2ECqHi4rrUE97zfJAEVtnWGFOlY\" />\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\">\n    <ConfirmationsSetting value=\"2\" id=\"Add\" />\n  </component>\n  <component name=\"ProjectViewState\">\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\n    <option name=\"showLibraryContents\" value=\"true\" />\n  </component>\n  <component name=\"PropertiesComponent\">\n    <property name=\"ASKED_ADD_EXTERNAL_FILES\" value=\"true\" />\n    <property name=\"ASKED_SHARE_PROJECT_CONFIGURATION_FILES\" value=\"true\" />\n    <property name=\"RunOnceActivity.OpenProjectViewOnStart\" value=\"true\" />\n    <property name=\"RunOnceActivity.ShowReadmeOnStart\" value=\"true\" />\n    <property name=\"RunOnceActivity.cidr.known.project.marker\" value=\"true\" />\n    <property name=\"SHARE_PROJECT_CONFIGURATION_FILES\" value=\"true\" />\n    <property name=\"WebServerToolWindowFactoryState\" value=\"false\" />\n    <property name=\"cf.first.check.clang-format\" value=\"false\" />\n    <property name=\"cidr.known.project.marker\" value=\"true\" />\n    <property name=\"last_opened_file_path\" value=\"$PROJECT_DIR$\" />\n    <property name=\"node.js.detected.package.eslint\" value=\"true\" />\n    <property name=\"node.js.detected.package.tslint\" value=\"true\" />\n    <property name=\"node.js.selected.package.eslint\" value=\"(autodetect)\" />\n    <property name=\"node.js.selected.package.tslint\" value=\"(autodetect)\" />\n    <property name=\"nodejs_package_manager_path\" value=\"npm\" />\n    <property name=\"settings.editor.selected.configurable\" value=\"preferences.pluginManager\" />\n  </component>\n  <component name=\"ReaderModeSettings\">\n    <option name=\"showLigatures\" value=\"true\" />\n  </component>\n  <component name=\"RunManager\" selected=\"Makefile Application.all\">\n    <configuration name=\"all\" type=\"CLionNativeAppRunConfigurationType\" REDIRECT_INPUT=\"false\" ELEVATE=\"false\" USE_EXTERNAL_CONSOLE=\"false\" PASS_PARENT_ENVS_2=\"true\" PROJECT_NAME=\"42Cursus\" TARGET_NAME=\"all\" CONFIG_NAME=\"all\" version=\"1\">\n      <method v=\"2\">\n        <option name=\"CLION.COMPOUND.BUILD\" enabled=\"true\" />\n      </method>\n    </configuration>\n    <configuration name=\"fclean\" type=\"CLionNativeAppRunConfigurationType\" REDIRECT_INPUT=\"false\" ELEVATE=\"false\" USE_EXTERNAL_CONSOLE=\"false\" PASS_PARENT_ENVS_2=\"true\" PROJECT_NAME=\"42Cursus\" TARGET_NAME=\"fclean\" CONFIG_NAME=\"fclean\" version=\"1\">\n      <method v=\"2\">\n        <option name=\"CLION.COMPOUND.BUILD\" enabled=\"true\" />\n      </method>\n    </configuration>\n    <configuration name=\"libft.a\" type=\"CLionNativeAppRunConfigurationType\" REDIRECT_INPUT=\"false\" ELEVATE=\"false\" USE_EXTERNAL_CONSOLE=\"false\" PASS_PARENT_ENVS_2=\"true\" PROJECT_NAME=\"42Cursus\" TARGET_NAME=\"libft.a\" CONFIG_NAME=\"libft.a\" version=\"1\">\n      <method v=\"2\">\n        <option name=\"CLION.COMPOUND.BUILD\" enabled=\"true\" />\n      </method>\n    </configuration>\n    <configuration name=\"re\" type=\"CLionNativeAppRunConfigurationType\" REDIRECT_INPUT=\"false\" ELEVATE=\"false\" USE_EXTERNAL_CONSOLE=\"false\" PASS_PARENT_ENVS_2=\"true\" PROJECT_NAME=\"42Cursus\" TARGET_NAME=\"re\" CONFIG_NAME=\"re\" version=\"1\">\n      <method v=\"2\">\n        <option name=\"CLION.COMPOUND.BUILD\" enabled=\"true\" />\n      </method>\n    </configuration>\n    <configuration name=\"run\" type=\"CLionNativeAppRunConfigurationType\" REDIRECT_INPUT=\"false\" ELEVATE=\"false\" USE_EXTERNAL_CONSOLE=\"false\" PASS_PARENT_ENVS_2=\"true\" PROJECT_NAME=\"42Cursus\" TARGET_NAME=\"run\" CONFIG_NAME=\"run\" version=\"1\">\n      <method v=\"2\">\n        <option name=\"CLION.COMPOUND.BUILD\" enabled=\"true\" />\n      </method>\n    </configuration>\n    <configuration default=\"true\" type=\"CMakeRunConfiguration\" factoryName=\"Application\" REDIRECT_INPUT=\"false\" ELEVATE=\"false\" USE_EXTERNAL_CONSOLE=\"false\" PASS_PARENT_ENVS_2=\"true\">\n      <method v=\"2\">\n        <option name=\"com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask\" enabled=\"true\" />\n      </method>\n    </configuration>\n    <configuration default=\"true\" type=\"GradleAppRunConfiguration\" factoryName=\"Application\" REDIRECT_INPUT=\"false\" ELEVATE=\"false\" USE_EXTERNAL_CONSOLE=\"false\" PASS_PARENT_ENVS_2=\"true\">\n      <method v=\"2\">\n        <option name=\"com.jetbrains.cidr.cpp.gradle.execution.GradleNativeBuildBeforeRunTaskProvider$BuildBeforeRunTask\" enabled=\"true\" />\n      </method>\n    </configuration>\n    <list>\n      <item itemvalue=\"Makefile Application.all\" />\n      <item itemvalue=\"Makefile Application.fclean\" />\n      <item itemvalue=\"Makefile Application.re\" />\n      <item itemvalue=\"Makefile Application.libft.a\" />\n      <item itemvalue=\"Makefile Application.run\" />\n    </list>\n  </component>\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\n  <component name=\"TaskManager\">\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\n      <changelist id=\"36b20ec8-2a4c-4f26-bac0-f006028201f4\" name=\"Changes\" comment=\"\" />\n      <created>1662109829592</created>\n      <option name=\"number\" value=\"Default\" />\n      <option name=\"presentableId\" value=\"Default\" />\n      <updated>1662109829592</updated>\n      <workItem from=\"1662109832976\" duration=\"354000\" />\n      <workItem from=\"1662110227973\" duration=\"145000\" />\n      <workItem from=\"1662110383376\" duration=\"1298000\" />\n      <workItem from=\"1662111693390\" duration=\"5317000\" />\n      <workItem from=\"1662133835643\" duration=\"633000\" />\n      <workItem from=\"1662134479882\" duration=\"2080000\" />\n      <workItem from=\"1662139517711\" duration=\"2888000\" />\n      <workItem from=\"1662896962498\" duration=\"1901000\" />\n    </task>\n    <task id=\"LOCAL-00001\" summary=\"Works ft_putchar_fd.c\">\n      <created>1662141180806</created>\n      <option name=\"number\" value=\"00001\" />\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1662141180806</updated>\n    </task>\n    <option name=\"localTasksCounter\" value=\"2\" />\n    <servers />\n  </component>\n  <component name=\"TypeScriptGeneratedFilesManager\">\n    <option name=\"version\" value=\"3\" />\n  </component>\n  <component name=\"Vcs.Log.Tabs.Properties\">\n    <option name=\"TAB_STATES\">\n      <map>\n        <entry key=\"MAIN\">\n          <value>\n            <State />\n          </value>\n        </entry>\n      </map>\n    </option>\n    <option name=\"oldMeFiltersMigrated\" value=\"true\" />\n  </component>\n  <component name=\"VcsManagerConfiguration\">\n    <option name=\"ADD_EXTERNAL_FILES_SILENTLY\" value=\"true\" />\n    <MESSAGE value=\"Works ft_putchar_fd.c\" />\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"Works ft_putchar_fd.c\" />\n  </component>\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision f707de11c69fdbe3a0ae2394983fa69a940da45b)
++++ b/.idea/workspace.xml	(date 1662907366000)
+@@ -6,7 +6,6 @@
+   <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
+     <generated>
+       <config projectName="42Cursus" targetName="re" />
+-      <config projectName="42Cursus" targetName="run" />
+       <config projectName="42Cursus" targetName="all" />
+       <config projectName="42Cursus" targetName="fclean" />
+       <config projectName="42Cursus" targetName="libft.a" />
+@@ -18,15 +17,12 @@
+     </configurations>
+   </component>
+   <component name="ChangeListManager">
+-    <list default="true" id="36b20ec8-2a4c-4f26-bac0-f006028201f4" name="Changes" comment="Works ft_putchar_fd.c">
+-      <change beforePath="$PROJECT_DIR$/.github/workflows/norminette.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/norminette.yml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
++    <list default="true" id="36b20ec8-2a4c-4f26-bac0-f006028201f4" name="Changes" comment="testing ft_strtrim.c">
++      <change afterPath="$PROJECT_DIR$/libft/strjoin" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/42Cursus2.iml" beforeDir="false" />
+       <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/libft/ft_strtrim.c" beforeDir="false" afterPath="$PROJECT_DIR$/libft/ft_strtrim.c" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/libft/libft.h" beforeDir="false" afterPath="$PROJECT_DIR$/libft/libft.h" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/libft/ft_strjoin.c" beforeDir="false" afterPath="$PROJECT_DIR$/libft/ft_strjoin.c" afterDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+@@ -43,6 +39,9 @@
+   </component>
+   <component name="Git.Settings">
+     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
++  </component>
++  <component name="GitToolBoxStore">
++    <option name="projectConfigVersion" value="5" />
+   </component>
+   <component name="MakefileLocalSettings">
+     <option name="availableProjects">
+@@ -57,17 +56,12 @@
+           <value>
+             <list>
+               <ExternalProjectPojo>
+-                <option name="name" value="42Cursus" />
++                <option name="name" value="libft" />
+                 <option name="path" value="$PROJECT_DIR$/libft" />
+               </ExternalProjectPojo>
+             </list>
+           </value>
+         </entry>
+-      </map>
+-    </option>
+-    <option name="projectSyncType">
+-      <map>
+-        <entry key="$PROJECT_DIR$/libft" value="RE_IMPORT" />
+       </map>
+     </option>
+   </component>
+@@ -121,11 +115,6 @@
+         <option name="CLION.COMPOUND.BUILD" enabled="true" />
+       </method>
+     </configuration>
+-    <configuration name="run" type="CLionNativeAppRunConfigurationType" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="42Cursus" TARGET_NAME="run" CONFIG_NAME="run" version="1">
+-      <method v="2">
+-        <option name="CLION.COMPOUND.BUILD" enabled="true" />
+-      </method>
+-    </configuration>
+     <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
+       <method v="2">
+         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+@@ -141,7 +130,6 @@
+       <item itemvalue="Makefile Application.fclean" />
+       <item itemvalue="Makefile Application.re" />
+       <item itemvalue="Makefile Application.libft.a" />
+-      <item itemvalue="Makefile Application.run" />
+     </list>
+   </component>
+   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+@@ -160,6 +148,8 @@
+       <workItem from="1662134479882" duration="2080000" />
+       <workItem from="1662139517711" duration="2888000" />
+       <workItem from="1662896962498" duration="1901000" />
++      <workItem from="1662898919842" duration="251000" />
++      <workItem from="1662904290050" duration="667000" />
+     </task>
+     <task id="LOCAL-00001" summary="Works ft_putchar_fd.c">
+       <created>1662141180806</created>
+@@ -168,7 +158,14 @@
+       <option name="project" value="LOCAL" />
+       <updated>1662141180806</updated>
+     </task>
+-    <option name="localTasksCounter" value="2" />
++    <task id="LOCAL-00002" summary="testing ft_strtrim.c">
++      <created>1662899149457</created>
++      <option name="number" value="00002" />
++      <option name="presentableId" value="LOCAL-00002" />
++      <option name="project" value="LOCAL" />
++      <updated>1662899149457</updated>
++    </task>
++    <option name="localTasksCounter" value="3" />
+     <servers />
+   </component>
+   <component name="TypeScriptGeneratedFilesManager">
+@@ -189,6 +186,7 @@
+   <component name="VcsManagerConfiguration">
+     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+     <MESSAGE value="Works ft_putchar_fd.c" />
+-    <option name="LAST_COMMIT_MESSAGE" value="Works ft_putchar_fd.c" />
++    <MESSAGE value="testing ft_strtrim.c" />
++    <option name="LAST_COMMIT_MESSAGE" value="testing ft_strtrim.c" />
+   </component>
+ </project>
+\ No newline at end of file
