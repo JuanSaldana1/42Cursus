@@ -28,7 +28,6 @@
  *
  * @param s pointer
  * @param n number of bytes to erase.
- *
  */
 void	ft_bzero(void *s, size_t n);
 
@@ -153,6 +152,8 @@ char	*ft_strjoin(char const *s1, char const *s2);
 char	*ft_strchr(const void *str, int c);
 
 /**
+ * @brief Removes the set characters of s1 string.\n
+ * To do it, first, checks each character in other static function.
  *
  * @param s1
  * @param set
