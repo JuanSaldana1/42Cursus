@@ -168,8 +168,8 @@ char	*ft_strtrim(char const *s1, char const *set);
  * @param src
  * @param destsize
  * @return
-
-size_t	ft_strlcat(char *dst, const char *src, size_t destsize); */
+*/
+size_t	ft_strlcat(char *dst, const char *src, size_t destsize);
 
 /**
  * @brief Copies or  the first n bytes of src on dst. src does not change.
