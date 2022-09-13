@@ -6,7 +6,7 @@
 /*   By: jsaldana <jsaldana@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/31 10:28:47 by jsaldana          #+#    #+#             */
-/*   Updated: 2022/08/31 11:08:30 by jsaldana         ###   ########.fr       */
+/*   Updated: 2022/09/13 17:42:06 by jsaldana         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,14 +14,14 @@
 
 char	*ft_strchr(const void *str, int c)
 {
-	char	*s;
+	unsigned char	*s;
 
-	s = (char *)str;
-	while (*s != c)
+	s = (unsigned char *)str;
+	while (*s != (unsigned char)c)
 	{
 		if (*s == '\0')
 			return (NULL);
 		s++;
 	}
-	return (s);
+	return ((char *)s);
 }
