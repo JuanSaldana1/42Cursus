@@ -6,7 +6,7 @@
 /*   By: jsaldana <jsaldana@student.42.com>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/02 19:56:14 by jsaldana          #+#    #+#             */
-/*   Updated: 2022/09/13 12:05:32 by jsaldana         ###   ########.fr       */
+/*   Updated: 2022/09/13 18:27:33 by jsaldana         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,9 +23,12 @@ void	ft_putnbr_fd(int n, int fd)
 	{
 		write(fd, "-", 1);
 		n = -n;
-		ft_putnbr_fd(-n, fd);
 	}
 	if (n >= 10)
+	{
 		ft_putnbr_fd(n / 10, fd);
-	ft_putchar_fd((char)(n % 10 + 48), fd);
+		ft_putnbr_fd(n % 10, fd);
+	}
+	else
+		ft_putchar_fd(n + 48, fd);
 }
