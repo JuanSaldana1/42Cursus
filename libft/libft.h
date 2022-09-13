@@ -72,7 +72,7 @@ int		ft_isdigit(int c);
  * @return 1 if is correct.\n
  * 0 if is false.
  */
-int		ft_isprint(char c);
+int		ft_isprint(int c);
 
 /**
  * @brief The first array takes the value of the first n bytes of the second
