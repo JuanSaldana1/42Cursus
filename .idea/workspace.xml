@@ -17,10 +17,9 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="36b20ec8-2a4c-4f26-bac0-f006028201f4" name="Changes" comment="ft_strlcat.c done OK!">
+    <list default="true" id="36b20ec8-2a4c-4f26-bac0-f006028201f4" name="Changes" comment="ft_putendl_fd.c Works&#10;ft_isprint.c fixed">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/ft_isprint.c" beforeDir="false" afterPath="$PROJECT_DIR$/libft/ft_isprint.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/ft_putendl_fd.c" beforeDir="false" afterPath="$PROJECT_DIR$/libft/ft_putendl_fd.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/ft_putnbr_fd.c" beforeDir="false" afterPath="$PROJECT_DIR$/libft/ft_putnbr_fd.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/libft/libft.h" beforeDir="false" afterPath="$PROJECT_DIR$/libft/libft.h" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -268,7 +267,7 @@
       <workItem from="1662896962498" duration="1901000" />
       <workItem from="1662914105779" duration="2737000" />
       <workItem from="1662971495966" duration="4072000" />
-      <workItem from="1663058275764" duration="1897000" />
+      <workItem from="1663058275764" duration="4458000" />
     </task>
     <task id="LOCAL-00001" summary="Works ft_putchar_fd.c">
       <created>1662141180806</created>
@@ -319,7 +318,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662974607118</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="ft_putendl_fd.c Works&#10;ft_isprint.c fixed">
+      <created>1663060878975</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1663060878975</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -349,7 +355,8 @@
     <MESSAGE value="added to Makefile ft_strlcat.c" />
     <MESSAGE value="Updated .gitignore" />
     <MESSAGE value="ft_strlcat.c done OK!" />
-    <option name="LAST_COMMIT_MESSAGE" value="ft_strlcat.c done OK!" />
+    <MESSAGE value="ft_putendl_fd.c Works&#10;ft_isprint.c fixed" />
+    <option name="LAST_COMMIT_MESSAGE" value="ft_putendl_fd.c Works&#10;ft_isprint.c fixed" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
