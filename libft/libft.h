@@ -6,7 +6,7 @@
 /*   By: jsaldana <jsaldana@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/17 19:43:10 by jsaldana          #+#    #+#             */
-/*   Updated: 2022/09/13 10:54:36 by jsaldana         ###   ########.fr       */
+/*   Updated: 2022/09/13 12:03:17 by jsaldana         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -73,6 +73,18 @@ int		ft_isdigit(int c);
  * 0 if is false.
  */
 int		ft_isprint(int c);
+
+/**
+ * @brief Locate the first position of c at/on n first
+ * characters of s.
+ * @param s
+ * @param c
+ * @param n
+ * @return \n
+ * If it founds the character, returns the first position or
+ * pointer to found character's position.
+ */
+void	*ft_memchr(const void *s, int c, size_t n);
 
 /**
  * @brief The first array takes the value of the first n bytes of the second
