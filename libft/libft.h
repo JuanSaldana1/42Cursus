@@ -141,6 +141,22 @@ void	ft_putendl_fd(char *s, int fd);
 void	ft_putnbr_fd(int n, int fd);
 
 /**
+ *
+ * @param s
+ * @param c
+ * @return
+ */
+char	**ft_split(char const *s, char c);
+
+/**
+ * @brief
+ * @param str
+ * @param c
+ * @return
+ */
+char	*ft_strchr(const void *str, int c);
+
+/**
  * @brief Foreach character of string s, it is applied the 'f' function.
  * @param s
  * @param f
@@ -154,14 +170,6 @@ void	ft_striteri(char *s, void (*f)(unsigned int, char*));
  * @return
  */
 char	*ft_strjoin(char const *s1, char const *s2);
-
-/**
- * @brief
- * @param str
- * @param c
- * @return
- */
-char	*ft_strchr(const void *str, int c);
 
 /**
  * @brief Removes the set characters of s1 string.\n
@@ -220,16 +228,6 @@ size_t	ft_strlen(const char *str);
 int		ft_strncmp(const char *str1, const char *str2, size_t n);
 
 /**
- * @brief Removes all characters from set string from the start and the end
- * of s1, finding a character not owning to set.
- *
- * @param s1
- * @param set
- * @return s1 cut
-
-char	*ft_strtrim(char const *s1, char const *set); */
-
-/**
  * @brief Searches for the last c character on s string
  *
  * @param s
@@ -237,6 +235,16 @@ char	*ft_strtrim(char const *s1, char const *set); */
  * @return
  */
 char	*ft_strrchr(const char *s, int c);
+
+/**
+ * @brief Removes all characters from set string from the start and the end
+ * of s1, finding a character not owning to set.
+ *
+ * @param s1
+ * @param set
+ * @return s1 cut
+ */
+char	*ft_strtrim(char const *s1, char const *set);
 
 /**
  * @brief
