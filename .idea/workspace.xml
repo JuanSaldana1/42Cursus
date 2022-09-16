@@ -17,12 +17,10 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="36b20ec8-2a4c-4f26-bac0-f006028201f4" name="Changes" comment="Trying ft_split.c">
-      <change afterPath="$PROJECT_DIR$/libft/ft_strnstr.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+    <list default="true" id="36b20ec8-2a4c-4f26-bac0-f006028201f4" name="Changes" comment="ft_split.c, ft_memcpy.c DONE">
+      <change afterPath="$PROJECT_DIR$/libft/ft_memmove.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/libft/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/libft/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/ft_split.c" beforeDir="false" afterPath="$PROJECT_DIR$/libft/ft_split.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/libft/libft.h" beforeDir="false" afterPath="$PROJECT_DIR$/libft/libft.h" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -156,7 +154,7 @@
       <workItem from="1663078497722" duration="7366000" />
       <workItem from="1663147988153" duration="1604000" />
       <workItem from="1663168678555" duration="11460000" />
-      <workItem from="1663317698974" duration="920000" />
+      <workItem from="1663317698974" duration="2063000" />
     </task>
     <task id="LOCAL-00001" summary="Works ft_putchar_fd.c">
       <created>1662141180806</created>
@@ -263,7 +261,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663177220080</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="ft_split.c, ft_memcpy.c DONE">
+      <created>1663319134399</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1663319134399</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -311,7 +316,8 @@
     <MESSAGE value="All functions are working right now" />
     <MESSAGE value="Added some more functions" />
     <MESSAGE value="Trying ft_split.c" />
-    <option name="LAST_COMMIT_MESSAGE" value="Trying ft_split.c" />
+    <MESSAGE value="ft_split.c, ft_memcpy.c DONE" />
+    <option name="LAST_COMMIT_MESSAGE" value="ft_split.c, ft_memcpy.c DONE" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

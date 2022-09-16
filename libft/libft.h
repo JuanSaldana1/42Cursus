@@ -6,7 +6,7 @@
 /*   By: jsaldana <jsaldana@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/17 19:43:10 by jsaldana          #+#    #+#             */
-/*   Updated: 2022/09/13 12:03:17 by jsaldana         ###   ########.fr       */
+/*   Updated: 2022/09/16 10:44:27 by jsaldana         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -103,6 +103,15 @@ void	*ft_memchr(const void *s, int c, size_t n);
  * @return void* 
  */
 void	*ft_memcpy(void *origin, void *destination, size_t bytesToCopy);
+
+/**
+ * @brief
+ * @param dest
+ * @param src
+ * @param len
+ * @return
+ */
+void	*ft_memmove(void *dest, const void *src, size_t len);
 
 /**
  * @brief Substitutes the c character on the first n bytes of the str array.
