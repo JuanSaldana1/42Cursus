@@ -228,6 +228,15 @@ size_t	ft_strlen(const char *str);
 int		ft_strncmp(const char *str1, const char *str2, size_t n);
 
 /**
+ * @brief
+ * @param haystack
+ * @param needle
+ * @param len
+ * @return
+ */
+char	*ft_strnstr(const char *haystack, const char *needle, size_t len);
+
+/**
  * @brief Searches for the last c character on s string
  *
  * @param s

@@ -6,7 +6,7 @@
 /*   By: jsaldana <jsaldana@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/13 18:48:46 by jsaldana          #+#    #+#             */
-/*   Updated: 2022/09/14 19:33:33 by jsaldana         ###   ########.fr       */
+/*   Updated: 2022/09/16 10:54:20 by jsaldana         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,33 +20,45 @@
  */
 static int	count_words(const char *str, char charset);
 
-char	**ft_split(char const *s, char c)
+static char	*word_dup(const char *str, int start, int finish)
 {
 	char	*word;
-	char	**result;
-	int		words;
 	int		i;
-	int		j;
 
-	words = 0;
+	i = 0;
+	word = malloc((finish - start + 1) * sizeof(char));
+	while (start < finish)
+		word[i++] = str[start++];
+	word[i] = '\0';
+	return (word);
+}
+
+char	**ft_split(char const *s, char c)
+{
+	size_t	i;
+	size_t	j;
+	int		index;
+	char	**split;
+
+	split = malloc((count_words(s, c) + 1) * sizeof(char *));
+	if (!s || !split)
+		return (0);
 	i = 0;
 	j = 0;
-	malloc(count_words(s, c) * sizeof(char *));
-	while (words < count_words(s, c))
+	index = -1;
+	while (i <= ft_strlen(s))
 	{
-		if ((s[i + 1] == c || s[i + 1] == '\0')
-			&& !(s[i] == c || s[i] == '\0'))
+		if (s[i] != c && index < 0)
+			index = i;
+		else if ((s[i] == c || i == ft_strlen(s)) && index >= 0)
 		{
-			s[i] = word[j];
-			j = 0;
+			split[j++] = word_dup(s, index, i);
+			index = -1;
 		}
 		i++;
-		j++;
-		s[i] = word[j];
-		result[words] = word;
 	}
-	result[len] = "\0";
-	return (result);
+	split[j] = 0;
+	return (split);
 }
 
 static int	count_words(const char *str, char charset)
@@ -64,12 +76,4 @@ static int	count_words(const char *str, char charset)
 		i++;
 	}
 	return (words);
-}
-
-int	main(void)
-{
-	char	*str = " Hola ole ahi que tal  ";
-
-	printf("%i", count_words(str, ' '));
-	return (0);
 }
