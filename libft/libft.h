@@ -6,7 +6,7 @@
 /*   By: jsaldana <jsaldana@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/17 19:43:10 by jsaldana          #+#    #+#             */
-/*   Updated: 2022/09/18 10:22:55 by jsaldana         ###   ########.fr       */
+/*   Updated: 2022/09/18 10:23:10 by jsaldana         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -118,7 +118,7 @@ int		ft_memcmp(const void *s1, const void *s2, size_t n);
  * @param bytesToCopy 
  * @return void* 
  */
-void	*ft_memcpy(void *origin, void *destination, size_t bytesToCopy);
+void	*ft_memcpy(void *origin, const void *destination, size_t bytesToCopy);
 
 /**
  * @brief
