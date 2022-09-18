@@ -6,7 +6,7 @@
 /*   By: jsaldana <jsaldana@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/17 19:43:10 by jsaldana          #+#    #+#             */
-/*   Updated: 2022/09/16 10:44:27 by jsaldana         ###   ########.fr       */
+/*   Updated: 2022/09/18 10:22:55 by jsaldana         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,6 +20,13 @@
 # include <errno.h>
 # include <string.h>
 # include <fcntl.h>
+
+/**
+ * @brief Converts arrays to integers
+ * @param str
+ * @return
+ */
+int		ft_atoi(const char *str);
 
 /**
  * @brief Deprecated, use better memset(3).\n
@@ -87,6 +94,15 @@ int		ft_isprint(int c);
 void	*ft_memchr(const void *s, int c, size_t n);
 
 /**
+ *
+ * @param s1
+ * @param s2
+ * @param n
+ * @return
+ */
+int		ft_memcmp(const void *s1, const void *s2, size_t n);
+
+/**
  * @brief The first array takes the value of the first n bytes of the second
  * array.
  * If the first array and the second are null, returns null.
@@ -150,7 +166,8 @@ void	ft_putendl_fd(char *s, int fd);
 void	ft_putnbr_fd(int n, int fd);
 
 /**
- *
+ * @brief Reserves using malloc a strings array resultant of dividing
+ * the s string into substrings using c character as delimiter.
  * @param s
  * @param c
  * @return
