@@ -1,9 +1,0 @@
-<changelist name="Uncommitted_changes_before_Update_at_9_11_22,_4_44_PM_[Changes]" date="1662907905413" recycled="true" deleted="true">
-  <option name="PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_9_11_22,_4_44_PM_[Changes]/shelved.patch" />
-  <option name="DESCRIPTION" value="Uncommitted changes before Update at 9/11/22, 4:44 PM [Changes]" />
-  <binary>
-    <option name="BEFORE_PATH" />
-    <option name="AFTER_PATH" value="libft/strjoin" />
-    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_9_11_22,_4_44_PM_[Changes]/strjoin" />
-  </binary>
-</changelist>

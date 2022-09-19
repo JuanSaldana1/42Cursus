@@ -6,7 +6,7 @@
 /*   By: jsaldana <jsaldana@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/17 19:43:10 by jsaldana          #+#    #+#             */
-/*   Updated: 2022/09/18 10:23:10 by jsaldana         ###   ########.fr       */
+/*   Updated: 2022/09/19 12:37:28 by jsaldana         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -166,6 +166,12 @@ void	ft_putendl_fd(char *s, int fd);
 void	ft_putnbr_fd(int n, int fd);
 
 /**
+ * @brief Sends the s string to the specified file descriptor
+ * @param s
+ * @param fd
+ */
+void	ft_putstr_fd(char *s, int fd);
+/**
  * @brief Reserves using malloc a strings array resultant of dividing
  * the s string into substrings using c character as delimiter.
  * @param s
@@ -182,6 +188,12 @@ char	**ft_split(char const *s, char c);
  */
 char	*ft_strchr(const void *str, int c);
 
+/**
+ * @brief
+ * @param s
+ * @return
+ */
+char	*ft_strdup(const char *s);
 /**
  * @brief Foreach character of string s, it is applied the 'f' function.
  * @param s
