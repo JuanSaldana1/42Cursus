@@ -24,7 +24,7 @@ char	*ft_strdup(const char *s)
 	source_size = ft_strlen(s);
 	str = malloc((source_size + 1) * sizeof(char));
 	if (!str)
-		return (0);
+		return (NULL);
 	while (i < source_size)
 	{
 		str[i] = s[j];
