@@ -6,7 +6,7 @@
 /*   By: jsaldana <jsaldana@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/17 19:43:10 by jsaldana          #+#    #+#             */
-/*   Updated: 2022/09/19 12:37:28 by jsaldana         ###   ########.fr       */
+/*   Updated: 2022/09/19 15:01:06 by jsaldana         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -82,8 +82,20 @@ int		ft_isdigit(int c);
 int		ft_isprint(int c);
 
 /**
+ * @brief This function is about to convert by ascii, an integer value.\n
+ * To do this, first, we are going to check the amount of digits on the given
+ * number. Then, you have to reserve memory space with malloc.\n
+ * To continue, for each digit, you assign the to the resulting string,
+ * the ascii value of every digit and then the number is divided by 10.\n
+ *
+ * @param n
+ * @return
+ */
+char	*ft_itoa(int n);
+
+/**
  * @brief Locate the first position of c at/on n first
- * characters of s.
+ * characters of param s .
  * @param s
  * @param c
  * @param n
@@ -171,6 +183,7 @@ void	ft_putnbr_fd(int n, int fd);
  * @param fd
  */
 void	ft_putstr_fd(char *s, int fd);
+
 /**
  * @brief Reserves using malloc a strings array resultant of dividing
  * the s string into substrings using c character as delimiter.
@@ -194,6 +207,7 @@ char	*ft_strchr(const void *str, int c);
  * @return
  */
 char	*ft_strdup(const char *s);
+
 /**
  * @brief Foreach character of string s, it is applied the 'f' function.
  * @param s
