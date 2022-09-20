@@ -65,14 +65,3 @@ int	count_digits(int n)
 	}
 	return (count);
 }
-
-/*
-int	main(void)
-{
-	char	*str;
-
-	str = ft_itoa(-0);
-	printf("%s", str);
-	free(str);
-	return (0);
-}*/

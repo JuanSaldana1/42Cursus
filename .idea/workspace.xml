@@ -17,11 +17,8 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="36b20ec8-2a4c-4f26-bac0-f006028201f4" name="Changes" comment="itoa DONE!!">
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+    <list default="true" id="36b20ec8-2a4c-4f26-bac0-f006028201f4" name="Changes" comment="ast commit of the day">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/ft_itoa.c" beforeDir="false" afterPath="$PROJECT_DIR$/libft/ft_itoa.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/ft_strdup.c" beforeDir="false" afterPath="$PROJECT_DIR$/libft/ft_strdup.c" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -136,11 +133,6 @@
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="GradleAppRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
-      <method v="2">
-        <option name="com.jetbrains.cidr.cpp.gradle.execution.GradleNativeBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
     <configuration default="true" type="tests" factoryName="Autodetect">
       <module name="42Cursus" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -250,7 +242,9 @@
       <workItem from="1663574025898" duration="14311000" />
       <workItem from="1663593741859" duration="453000" />
       <workItem from="1663594304861" duration="7762000" />
-      <workItem from="1663603201876" duration="4000" />
+      <workItem from="1663603201876" duration="222000" />
+      <workItem from="1663603537842" duration="61000" />
+      <workItem from="1663657694041" duration="521000" />
     </task>
     <task id="LOCAL-00001" summary="Works ft_putchar_fd.c">
       <created>1662141180806</created>
@@ -406,7 +400,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663595004447</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="ast commit of the day">
+      <created>1663603338500</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1663603338500</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -472,7 +473,8 @@
     <MESSAGE value="Two more functions" />
     <MESSAGE value="Renamed README.md" />
     <MESSAGE value="itoa DONE!!" />
-    <option name="LAST_COMMIT_MESSAGE" value="itoa DONE!!" />
+    <MESSAGE value="ast commit of the day" />
+    <option name="LAST_COMMIT_MESSAGE" value="ast commit of the day" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
