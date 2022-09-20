@@ -17,9 +17,8 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="36b20ec8-2a4c-4f26-bac0-f006028201f4" name="Changes" comment="First commit from today">
-      <change afterPath="$PROJECT_DIR$/libft/ft_calloc.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+    <list default="true" id="36b20ec8-2a4c-4f26-bac0-f006028201f4" name="Changes" comment="ft_calloc.c DONE">
+      <change afterPath="$PROJECT_DIR$/libft/ft_strmapi.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/libft/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/libft/Makefile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/libft/libft.h" beforeDir="false" afterPath="$PROJECT_DIR$/libft/libft.h" afterDir="false" />
@@ -181,7 +180,7 @@
       <workItem from="1663603201876" duration="222000" />
       <workItem from="1663603537842" duration="61000" />
       <workItem from="1663657694041" duration="3568000" />
-      <workItem from="1663686059898" duration="2464000" />
+      <workItem from="1663686059898" duration="3217000" />
     </task>
     <task id="LOCAL-00001" summary="Works ft_putchar_fd.c">
       <created>1662141180806</created>
@@ -351,7 +350,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663672133478</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="ft_calloc.c DONE">
+      <created>1663689056362</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1663689056362</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -394,7 +400,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Works ft_putchar_fd.c" />
     <MESSAGE value="testing ft_strtrim.c" />
     <MESSAGE value="Things various" />
     <MESSAGE value="ft_strtrim.c OK" />
@@ -419,7 +424,8 @@
     <MESSAGE value="itoa DONE!!" />
     <MESSAGE value="ast commit of the day" />
     <MESSAGE value="First commit from today" />
-    <option name="LAST_COMMIT_MESSAGE" value="First commit from today" />
+    <MESSAGE value="ft_calloc.c DONE" />
+    <option name="LAST_COMMIT_MESSAGE" value="ft_calloc.c DONE" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

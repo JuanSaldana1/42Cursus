@@ -6,7 +6,7 @@
 #    By: jsaldana <jsaldana@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/08/17 19:45:50 by jsaldana          #+#    #+#              #
-#   Updated: 2022/09/19 10:43:33 by jsaldana         ###   ########.fr       # #
+#   Updated: 2022/09/20 17:34:35 by jsaldana         ###   ########.fr       # #
 #                                                                              #
 # **************************************************************************** #
 
@@ -39,6 +39,7 @@ SRC  =	ft_atoi.c \
 		ft_strlcat.c \
 		ft_strlcpy.c \
 		ft_strlen.c \
+		ft_strmapi.c \
 		ft_strncmp.c \
 		ft_strnstr.c \
 		ft_strrchr.c \

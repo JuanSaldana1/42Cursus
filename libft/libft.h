@@ -6,7 +6,7 @@
 /*   By: jsaldana <jsaldana@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/17 19:43:10 by jsaldana          #+#    #+#             */
-/*   Updated: 2022/09/20 17:34:35 by jsaldana         ###   ########.fr       */
+/*   Updated: 2022/09/20 17:35:56 by jsaldana         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -270,6 +270,14 @@ size_t	ft_strlcpy(char *dest, const char *src, size_t n);
 size_t	ft_strlen(const char *str);
 
 /**
+ * @brief
+ * @param s
+ * @param f
+ * @return
+ */
+char	*ft_strmapi(char const *s, char (*f)(unsigned int, char));
+
+/**
  * @brief Compares the n first bytes of the two passed strings.
  *
    If both arrays are same, it will return 0.\n
@@ -339,4 +347,5 @@ int		ft_tolower(int c);
  * @return
  */
 int		ft_toupper(int c);
+
 #endif
