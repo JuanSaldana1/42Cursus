@@ -6,7 +6,7 @@
 /*   By: jsaldana <jsaldana@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/17 19:43:10 by jsaldana          #+#    #+#             */
-/*   Updated: 2022/09/19 15:01:06 by jsaldana         ###   ########.fr       */
+/*   Updated: 2022/09/20 17:34:35 by jsaldana         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,6 +37,14 @@ int		ft_atoi(const char *str);
  * @param n number of bytes to erase.
  */
 void	ft_bzero(void *s, size_t n);
+
+/**
+ * @brief
+ * @param count
+ * @param size
+ * @return
+ */
+void	*ft_calloc(size_t count, size_t size);
 
 /**
  * @brief Checks that the passed char is alphanumeric
