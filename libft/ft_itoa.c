@@ -6,7 +6,7 @@
 /*   By: jsaldana <jsaldana@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/19 12:57:10 by jsaldana          #+#    #+#             */
-/*   Updated: 2022/09/19 17:40:12 by jsaldana         ###   ########.fr       */
+/*   Updated: 2022/09/20 18:19:34 by jsaldana         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,27 +25,27 @@ int	count_digits(int n);
 
 char	*ft_itoa(int n)
 {
-	char	*str;
-	int		digits;
-	int		count;
+	char		*str;
+	size_t		digits;
+	size_t		count;
 
-	digits = count_digits(n);
-	str = malloc((digits + 1));
 	if (n == -2147483648)
 		return (ft_strdup("-2147483648"));
+	digits = count_digits(n);
+	str = malloc(digits + 1);
 	if (!str)
-		return (NULL);
+		return (0);
 	str[digits] = '\0';
 	count = 0;
 	if (n < 0)
 	{
 		str[0] = '-';
-		n *= -1;
+		n = n * -1;
 		count++;
 	}
 	while (digits-- > count)
 	{
-		str[digits] = 48 + (n % 10);
+		str[digits] = (n % 10) + '0';
 		n = n / 10;
 	}
 	return (str);

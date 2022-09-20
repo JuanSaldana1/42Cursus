@@ -17,11 +17,8 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="36b20ec8-2a4c-4f26-bac0-f006028201f4" name="Changes" comment="ft_calloc.c DONE">
-      <change afterPath="$PROJECT_DIR$/libft/ft_strmapi.c" afterDir="false" />
+    <list default="true" id="36b20ec8-2a4c-4f26-bac0-f006028201f4" name="Changes" comment="ft_strmapi.c DONE!!">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/libft/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/libft.h" beforeDir="false" afterPath="$PROJECT_DIR$/libft/libft.h" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -180,7 +177,7 @@
       <workItem from="1663603201876" duration="222000" />
       <workItem from="1663603537842" duration="61000" />
       <workItem from="1663657694041" duration="3568000" />
-      <workItem from="1663686059898" duration="3217000" />
+      <workItem from="1663686059898" duration="3937000" />
     </task>
     <task id="LOCAL-00001" summary="Works ft_putchar_fd.c">
       <created>1662141180806</created>
@@ -357,7 +354,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663689056362</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="ft_strmapi.c DONE!!">
+      <created>1663689903830</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1663689903830</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -400,7 +404,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="testing ft_strtrim.c" />
     <MESSAGE value="Things various" />
     <MESSAGE value="ft_strtrim.c OK" />
     <MESSAGE value="ft_striteri.c OK" />
@@ -425,7 +428,8 @@
     <MESSAGE value="ast commit of the day" />
     <MESSAGE value="First commit from today" />
     <MESSAGE value="ft_calloc.c DONE" />
-    <option name="LAST_COMMIT_MESSAGE" value="ft_calloc.c DONE" />
+    <MESSAGE value="ft_strmapi.c DONE!!" />
+    <option name="LAST_COMMIT_MESSAGE" value="ft_strmapi.c DONE!!" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
