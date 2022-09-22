@@ -17,8 +17,9 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="36b20ec8-2a4c-4f26-bac0-f006028201f4" name="Changes" comment="ft_strmapi.c DONE!!">
+    <list default="true" id="36b20ec8-2a4c-4f26-bac0-f006028201f4" name="Changes" comment="All Libft DONE, Ready To Publish">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libft/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/libft/Makefile" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,6 +90,7 @@
     <property name="RunOnceActivity.cidr.known.project.marker" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="add_unversioned_files" value="$PROJECT_DIR$/libft/ft_strlcat.o" />
     <property name="cf.first.check.clang-format" value="false" />
     <property name="cidr.known.project.marker" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -177,7 +179,11 @@
       <workItem from="1663603201876" duration="222000" />
       <workItem from="1663603537842" duration="61000" />
       <workItem from="1663657694041" duration="3568000" />
-      <workItem from="1663686059898" duration="3937000" />
+      <workItem from="1663686059898" duration="4426000" />
+      <workItem from="1663774915587" duration="1011000" />
+      <workItem from="1663831099260" duration="964000" />
+      <workItem from="1663861187731" duration="126000" />
+      <workItem from="1663864659252" duration="379000" />
     </task>
     <task id="LOCAL-00001" summary="Works ft_putchar_fd.c">
       <created>1662141180806</created>
@@ -361,7 +367,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663689903830</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="All Libft DONE, Ready To Publish">
+      <created>1663690942037</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1663690942037</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -404,7 +417,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Things various" />
     <MESSAGE value="ft_strtrim.c OK" />
     <MESSAGE value="ft_striteri.c OK" />
     <MESSAGE value="added to Makefile ft_strlcat.c" />
@@ -429,7 +441,8 @@
     <MESSAGE value="First commit from today" />
     <MESSAGE value="ft_calloc.c DONE" />
     <MESSAGE value="ft_strmapi.c DONE!!" />
-    <option name="LAST_COMMIT_MESSAGE" value="ft_strmapi.c DONE!!" />
+    <MESSAGE value="All Libft DONE, Ready To Publish" />
+    <option name="LAST_COMMIT_MESSAGE" value="All Libft DONE, Ready To Publish" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
