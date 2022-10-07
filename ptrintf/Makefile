@@ -1,17 +1,40 @@
-# ************************************************************************** #
-#                                                                            #
-#                                                        :::      ::::::::   #
-#   Makefile                                           :+:      :+:    :+:   #
-#                                                    +:+ +:+         +:+     #
-#   By: jsaldana <jsaldana@student.42.fr>          +#+  +:+       +#+        #
-#                                                +#+#+#+#+#+   +#+           #
-#   Created: 2022/09/23 10:02:13 by jsaldana          #+#    #+#             #
-#   Updated: 2022/09/23 10:02:13 by jsaldana         ###   ########.fr       #
-#                                                                            #
-# ************************************************************************** #
+NAME	=	libftprintf.a
 
+SRC		=	ft_printf.c ft_print_args.c \
+			ft_putnbr.c ft_putnbr_hex.c \
+			ft_putnbr_u.c ft_putchar.c \
+			ft_putstr.c ft_strlen.c \
 
-NAME			=	libftprintf.a
+CC		=	gcc
 
+FLAGS	=	-Wall -Werror -Wextra
 
-all : $(NAME)
+AR		=	ar rc
+
+OBJS	=	$(SRC:%.c=%.o)
+
+%.o: %.c
+	@$(CC) $(FLAGS) -c $< -o $@
+
+$(NAME): $(OBJS)
+	@$(AR) $@ $^
+	@echo "\033[92mLibrary Compiled"
+
+all: $(NAME)
+
+run: all
+	@clear
+	@gcc $(SRC) $(NAME)
+	@./a.out
+
+clean:
+	@rm -f $(OBJS)
+	@echo "\033[93mAll .o Files Removed"
+
+fclean: clean
+	@rm -f $(NAME)
+	@echo "\033[95mLibrary Removed"
+
+re:	fclean all
+
+.PHONY: all fclean clean re
