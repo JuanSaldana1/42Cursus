@@ -6,7 +6,7 @@
 /*   By: jsaldana <jsaldana@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/03 13:22:15 by jsaldana          #+#    #+#             */
-/*   Updated: 2022/10/04 09:26:35 by jsaldana         ###   ########.fr       */
+/*   Updated: 2022/10/07 13:07:07 by jsaldana         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,19 +14,22 @@
 
 int	ft_putnbr(int n)
 {
-	if (n == -2147483648)
-		write(1, "-2147483648", 11);
+	int	i;
+
+	i = 0;
 	if (n < 0)
 	{
-		write(1, "-", 1);
+		i = write(1, "-", 1);
 		n = -n;
 	}
-	if (n >= 10)
+	if (n == -2147483648)
+		i += ft_putstr("2147483648");
+	if (n > 9)
 	{
-		ft_putnbr(n / 10);
-		ft_putnbr(n % 10);
+		i += ft_putnbr(n / 10);
+		i += ft_putnbr(n % 10);
 	}
-	else
-		ft_putchar(n + 48);
-	return (n);
+	if (n >= 0 && n <= 9)
+		i += ft_putchar(n + 48);
+	return (i);
 }

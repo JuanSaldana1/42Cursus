@@ -6,7 +6,7 @@
 /*   By: jsaldana <jsaldana@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/28 17:48:53 by jsaldana          #+#    #+#             */
-/*   Updated: 2022/10/05 19:10:09 by jsaldana         ###   ########.fr       */
+/*   Updated: 2022/10/07 12:31:13 by jsaldana         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,7 @@
  * @param value
  * @return
  */
-int				ft_print_args(char const *src, va_list args, int value);
+//int				ft_print_args(char const *src, va_list args, int value);
 
 /**
  * @brief Function that prints the passed params.\n

@@ -19,6 +19,6 @@ unsigned int	ft_putnbr_u(unsigned int n)
 	rtn = 0;
 	if (n > 9)
 		rtn += ft_putnbr_u(n / 10);
-	rtn += ft_putchar((char)((n % 10) + '0'));
+	rtn += ft_putchar((n % 10) + '0');
 	return (rtn);
 }

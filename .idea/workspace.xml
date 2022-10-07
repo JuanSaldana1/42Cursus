@@ -17,9 +17,16 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="36b20ec8-2a4c-4f26-bac0-f006028201f4" name="Changes" comment="Failed on name flags fixed">
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+    <list default="true" id="36b20ec8-2a4c-4f26-bac0-f006028201f4" name="Changes" comment="Renamed Directory">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/printf/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/printf/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/printf/ft_print_args.c" beforeDir="false" afterPath="$PROJECT_DIR$/printf/ft_print_args.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/printf/ft_printf.c" beforeDir="false" afterPath="$PROJECT_DIR$/printf/ft_printf.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/printf/ft_printf.h" beforeDir="false" afterPath="$PROJECT_DIR$/printf/ft_printf.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/printf/ft_putnbr.c" beforeDir="false" afterPath="$PROJECT_DIR$/printf/ft_putnbr.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/printf/ft_putnbr_u.c" beforeDir="false" afterPath="$PROJECT_DIR$/printf/ft_putnbr_u.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/printf/ft_putstr.c" beforeDir="false" afterPath="$PROJECT_DIR$/printf/ft_putstr.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/printf/ft_strlen.c" beforeDir="false" afterPath="$PROJECT_DIR$/printf/ft_strlen.c" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -186,7 +193,7 @@
       <workItem from="1663864659252" duration="1076000" />
       <workItem from="1663916532754" duration="14000" />
       <workItem from="1663918501355" duration="1602000" />
-      <workItem from="1665138000070" duration="6000" />
+      <workItem from="1665138000070" duration="2576000" />
     </task>
     <task id="LOCAL-00001" summary="Works ft_putchar_fd.c">
       <created>1662141180806</created>
@@ -384,7 +391,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663865680928</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="Renamed Directory">
+      <created>1665138117691</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1665138117691</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -427,7 +441,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="ft_striteri.c OK" />
     <MESSAGE value="added to Makefile ft_strlcat.c" />
     <MESSAGE value="Updated .gitignore" />
     <MESSAGE value="ft_strlcat.c done OK!" />
@@ -452,7 +465,8 @@
     <MESSAGE value="ft_strmapi.c DONE!!" />
     <MESSAGE value="All Libft DONE, Ready To Publish" />
     <MESSAGE value="Failed on name flags fixed" />
-    <option name="LAST_COMMIT_MESSAGE" value="Failed on name flags fixed" />
+    <MESSAGE value="Renamed Directory" />
+    <option name="LAST_COMMIT_MESSAGE" value="Renamed Directory" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

@@ -1,6 +1,6 @@
 NAME	=	libftprintf.a
 
-SRC		=	ft_printf.c ft_print_args.c \
+SRC		=	ft_printf.c \
 			ft_putnbr.c ft_putnbr_hex.c \
 			ft_putnbr_u.c ft_putchar.c \
 			ft_putstr.c ft_strlen.c \

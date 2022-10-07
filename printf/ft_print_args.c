@@ -12,7 +12,7 @@
 
 #include "ft_printf.h"
 
-int	ft_print_args(char const *src, va_list args, int value)
+/*int	ft_print_args(char const *src, va_list args, int value)
 {
 	src++;
 	if (*src == '%')
@@ -34,4 +34,4 @@ int	ft_print_args(char const *src, va_list args, int value)
 	if (*src == 'X')
 		value += ft_putnbr_hex(va_arg(args, unsigned int), *src);
 	return (value);
-}
+}*/
