@@ -14,6 +14,10 @@
 
 char	*get_next_line(int fd)
 {
+	int	buffer_size;
+
 	(void)fd;
+	buffer_size = 4;
+	read(fd, buffer_size, );
 	return ("HOLA");
 }
