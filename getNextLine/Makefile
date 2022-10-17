@@ -10,7 +10,7 @@
 # ************************************************************************** #
 
 NAME	=	get_next_line
-SRC		=	get_next_line.c
+SRC		=	get_next_line.c get_next_line_utils.c
 CC		=	gcc
 AR		=	ar rc
 OBJS	=	$(SRC:%.c=%.o)
