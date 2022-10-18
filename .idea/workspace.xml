@@ -18,15 +18,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="36b20ec8-2a4c-4f26-bac0-f006028201f4" name="Changes" comment="Renamed Directory">
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/getNextLine/get_next_line.c" beforeDir="false" afterPath="$PROJECT_DIR$/getNextLine/get_next_line.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/getNextLine/get_next_line.h" beforeDir="false" afterPath="$PROJECT_DIR$/getNextLine/get_next_line.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/printf/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/printf/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/printf/ft_print_args.c" beforeDir="false" afterPath="$PROJECT_DIR$/printf/ft_print_args.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/printf/ft_printf.c" beforeDir="false" afterPath="$PROJECT_DIR$/printf/ft_printf.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/printf/ft_print_args.c" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/printf/ft_printf.h" beforeDir="false" afterPath="$PROJECT_DIR$/printf/ft_printf.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/printf/ft_putnbr.c" beforeDir="false" afterPath="$PROJECT_DIR$/printf/ft_putnbr.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/printf/ft_putnbr_u.c" beforeDir="false" afterPath="$PROJECT_DIR$/printf/ft_putnbr_u.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/printf/ft_putstr.c" beforeDir="false" afterPath="$PROJECT_DIR$/printf/ft_putstr.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/printf/ft_strlen.c" beforeDir="false" afterPath="$PROJECT_DIR$/printf/ft_strlen.c" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -100,23 +98,18 @@
     <property name="add_unversioned_files" value="$PROJECT_DIR$/libft/ft_strlcat.o" />
     <property name="cf.first.check.clang-format" value="false" />
     <property name="cidr.known.project.marker" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/getNextLine" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="settings.editor.selected.configurable" value="com.samkortekaas.norminette.settings.NorminetteSettingsPanel" />
   </component>
   <component name="ReaderModeSettings">
     <option name="showLigatures" value="true" />
   </component>
   <component name="RunManager" selected="Makefile Application.clean">
-    <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
-      <method v="2">
-        <option name="CLION.EXTERNAL.BUILD" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="all" type="CLionNativeAppRunConfigurationType" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="42Cursus" TARGET_NAME="all" CONFIG_NAME="all" version="1" RUN_PATH="$PROJECT_DIR$/libft/Makefile">
       <method v="2">
         <option name="CLION.COMPOUND.BUILD" enabled="true" />
@@ -194,6 +187,12 @@
       <workItem from="1663916532754" duration="14000" />
       <workItem from="1663918501355" duration="1602000" />
       <workItem from="1665138000070" duration="2576000" />
+      <workItem from="1665570971657" duration="134000" />
+      <workItem from="1665571128429" duration="965000" />
+      <workItem from="1665572234261" duration="399000" />
+      <workItem from="1665650570336" duration="669000" />
+      <workItem from="1666080921598" duration="80000" />
+      <workItem from="1666082651962" duration="178000" />
     </task>
     <task id="LOCAL-00001" summary="Works ft_putchar_fd.c">
       <created>1662141180806</created>

@@ -21,15 +21,6 @@
 # define UPPERXBASE "0123456789ABCDEF"
 
 /**
- * @brief
- * @param src
- * @param args
- * @param value
- * @return
- */
-//int				ft_print_args(char const *src, va_list args, int value);
-
-/**
  * @brief Function that prints the passed params.\n
  * Every time it founds an %, counts one more argument
  * @param src
