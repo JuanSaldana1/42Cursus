@@ -6,7 +6,7 @@
 /*   By: jsaldana <jsaldana@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/17 10:33:29 by jsaldana          #+#    #+#             */
-/*   Updated: 2022/10/17 10:35:20 by jsaldana         ###   ########.fr       */
+/*   Updated: 2022/10/18 12:32:15 by                  ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,9 +37,9 @@ int	ft_buf_0_after_nl(char *buf)
 	return (result);
 }
 
-int	ft_cpy_buf(char *src, char *dst)
+int	ft_cpy_buf(const char *src, char *dst)
 {
-	unsigned int	i;
+	int	i;
 
 	i = 0;
 	while (src[i])

@@ -6,7 +6,7 @@
 /*   By: jsaldana <jsaldana@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/23 10:05:56 by jsaldana          #+#    #+#             */
-/*   Updated: 2022/10/17 12:09:48 by jsaldana         ###   ########.fr       */
+/*   Updated: 2022/10/18 13:15:16 by                  ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,15 +32,14 @@ int	main(void)
 	int		fd;
 	char	*print;
 
-	fd = open("./res/test1.txt", O_RDWR);
+	fd = open("./res/test1.txt", O_RDONLY);
+	print = get_next_line(fd);
+	printf("%s\n", print);
+	print = get_next_line(fd);
+	printf("%s\n", print);
 	print = get_next_line(fd);
 	printf("%s\n", print);
 	free(print);
-	print = get_next_line(fd);
-	printf("%s\n", print);
-	free(print);
-	print = get_next_line(fd);
-	printf("%s\n", print);
-	free(print);
+	close(fd);
 	return (0);
 }
