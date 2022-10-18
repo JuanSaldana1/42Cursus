@@ -5,8 +5,9 @@
 #                                                    +:+ +:+         +:+     #
 #   By: jsaldana <jsaldana@student.42.fr>          +#+  +:+       +#+        #
 #                                                +#+#+#+#+#+   +#+           #
-#   Created: 2022/09/23 10:00:07 by jsaldana          #+#    #+#             #
-#   Updated: 202#   Updated: 2022/09/23 10:12:58 by jsaldana         ###   ########.fr       #                                                              #
+#   Created: 2022/10/18 19:26:21 by jsaldana          #+#    #+#             #
+#   Updated: 2022/10/18 19:26:21 by jsaldana         ###   ########.fr       #
+#                                                                            #
 # ************************************************************************** #
 
 NAME	=	get_next_line
