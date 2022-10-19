@@ -27,7 +27,7 @@ char	*get_next_line(int fd)
 	return (buf);
 }
 
-int	main(void)
+/* int	main(void)
 {
 	int		fd;
 	char	*print;
@@ -42,4 +42,4 @@ int	main(void)
 	free(print);
 	close(fd);
 	return (0);
-}
+} */
