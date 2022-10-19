@@ -6,73 +6,91 @@
 /*   By: jsaldana <jsaldana@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/18 19:26:21 by jsaldana          #+#    #+#             */
-/*   Updated: 2022/10/18 19:26:21 by jsaldana         ###   ########.fr       */
+/*   Updated: 2022/10/19 18:45:58 by jsaldana         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "get_next_line.h"
 
-int	ft_buf_0_after_nl(char *buf)
+size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
 {
-	int	result;
-	int	bufsize;
-	int	hasn;
+	size_t	counter;
 
-	result = 0;
-	bufsize = 0;
-	hasn = 0;
-	if (!buf)
-		return (result);
-	while (buf[bufsize])
+	counter = 0;
+	if (dstsize > 0)
 	{
-		if (buf[bufsize] == '\n')
+		while (src[counter] && counter < dstsize - 1)
 		{
-			hasn = 1;
-			result = 1;
+			dst[counter] = src[counter];
+			counter++;
 		}
-		if (hasn)
-			buf[bufsize] = 0;
-		bufsize++;
+		dst[counter] = '\0';
 	}
-	return (result);
+	return (ft_strlen(src));
 }
 
-int	ft_cpy_buf(const char *src, char *dst)
+char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
-	int	i;
+	char	*str;
 
-	i = 0;
-	while (src[i])
+	if (start >= ft_strlen(s))
 	{
-		dst[i] = src[i];
-		i++;
+		str = (char *)malloc(1);
+		*str = '\0';
+		return (str);
 	}
-	return (i);
+	str = NULL;
+	s += start;
+	if (len > ft_strlen(s))
+		len = ft_strlen(s);
+	str = malloc(len + 1);
+	if (!(str))
+		return (NULL);
+	ft_strlcpy(str, s, len + 1);
+	return (str);
 }
 
-char	*ft_alloc_read(int fd, char *buf, int index)
+char	*ft_strjoin(char *str1, char *str2)
 {
-	char	*tempbuf;
-	int		size;
+	int		i;
+	char	*n_str;
 
-	tempbuf = 0;
-	if (index > 1)
+	i = -1;
+	if (!str1)
 	{
-		size = BUFFER_SIZE * (index - 1) + 1;
-		tempbuf = malloc(size);
-		tempbuf[size] = 0;
-		ft_cpy_buf(buf, tempbuf);
-		free(buf);
+		str1 = malloc(1);
+		str1[0] = '\0';
 	}
-	size = (BUFFER_SIZE * index) + 1;
-	buf = malloc(size);
-	buf[size] = 0;
-	if (tempbuf)
-	{
-		read(fd, buf + ft_cpy_buf(tempbuf, buf), BUFFER_SIZE);
-		free(tempbuf);
-	}
-	else
-		read(fd, buf, BUFFER_SIZE);
-	return (buf);
+	n_str = malloc(ft_strlen(str1) + 2);
+	if (!n_str)
+		return (NULL);
+	while (str1[++i])
+		n_str[i] = str1[i];
+	n_str[i] = str2[0];
+	n_str[i + 1] = '\0';
+	free(str1);
+	return (n_str);
+}
+
+size_t	ft_strlen(const char *s)
+{
+	size_t	counter;
+
+	counter = 0;
+	if (!s)
+		return (0);
+	while (s[counter])
+		counter++;
+	return (counter);
+}
+
+char	*ft_strdup(const char *s1)
+{
+	char	*str;
+
+	str = malloc((ft_strlen(s1) + 1) * sizeof(char));
+	if (!str)
+		return (NULL);
+	ft_strlcpy(str, s1, ft_strlen(s1) + 1);
+	return (str);
 }

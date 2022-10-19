@@ -6,7 +6,7 @@
 /*   By: jsaldana <jsaldana@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/18 19:26:21 by jsaldana          #+#    #+#             */
-/*   Updated: 2022/10/18 19:26:21 by jsaldana         ###   ########.fr       */
+/*   Updated: 2022/10/19 19:34:36 by jsaldana         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,19 +30,53 @@
 char	*get_next_line(int fd);
 
 /**
- * @brief
- * @param buf
- * @return
+ * @brief Copies or  the first dstsize bytes of src on dst. src does not
+ * change.
+ *
+ * @param restrict
+ * @param restrict
+ * @param n
+ * @return The length of src with ft_strlen(src).
  */
-int		ft_buf_0_after_nl(char *buf);
+size_t  ft_strlcpy(char *dst, const char *src, size_t dstsize);
 
 /**
- * @brief
- * @param fd
- * @param buf
- * @param index
+ * @brief Function that returns an string with the value of the
+ * first len bytes starting from start.
+ *
+ * @param s String to be divided.
+ * @param start Byte where to start dividing.
+ * @param len Number of bytes to divide s.
  * @return
  */
-char	*ft_alloc_read(int fd, char *buf, int index);
+char	*ft_substr(char const *s, unsigned int start, size_t len);
+
+/**
+ * @brief Concatenates str1 & str2.
+ *
+ * @param str1 First String
+ * @param str2 Second String
+ * @return Returns string resulting from concatenation.
+*/
+char	*ft_strjoin(char *str1, char *str2);
+
+/**
+ * @brief Returns the length of the given string.
+ *
+ * @param s string passed as parameter
+ * @return the size of the given string.
+ */
+size_t	ft_strlen(const char *s);
+
+
+/**
+ * @brief The strdup() function returns a pointer to a new string which is a
+ * duplicate of the string s.  Memory for the new string is obtained with
+ * malloc(3), and can be freed with free(3).
+ * 
+ * @param s1 
+ * @return 
+ */
+char	*ft_strdup(const char *s1);
 
 #endif

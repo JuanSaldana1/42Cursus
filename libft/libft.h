@@ -6,7 +6,7 @@
 /*   By: jsaldana <jsaldana@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/17 19:43:10 by jsaldana          #+#    #+#             */
-/*   Updated: 2022/09/20 17:35:56 by jsaldana         ###   ########.fr       */
+/*   Updated: 2022/10/19 19:25:46 by jsaldana         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -254,8 +254,8 @@ size_t	ft_strlcat(char *dst, const char *src, size_t destsize);
 /**
  * @brief Copies or  the first n bytes of src on dst. src does not change.
  *
- * @param restrict
- * @param restrict
+ * @param dest
+ * @param src
  * @param n
  * @return Measures the length of src with ft_strlen(src).
  */
