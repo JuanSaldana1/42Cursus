@@ -6,7 +6,7 @@
 /*   By: jsaldana <jsaldana@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/18 19:26:21 by jsaldana          #+#    #+#             */
-/*   Updated: 2022/10/19 19:34:36 by jsaldana         ###   ########.fr       */
+/*   Updated: 2022/10/19 19:38:45 by jsaldana         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,6 +21,15 @@
 # include <fcntl.h>
 # include <stdlib.h>
 # include <stdio.h>
+
+typedef struct t_fd
+{
+	int				fd;
+	char			*str;
+	int				eof;
+	struct s_list	*next;
+
+}	t_fd;
 
 /**
  * @brief
