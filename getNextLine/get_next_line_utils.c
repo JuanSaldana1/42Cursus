@@ -6,71 +6,11 @@
 /*   By: jsaldana <jsaldana@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/18 19:26:21 by jsaldana          #+#    #+#             */
-/*   Updated: 2022/10/19 18:45:58 by jsaldana         ###   ########.fr       */
+/*   Updated: 2022/10/20 11:43:47 by jsaldana         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "get_next_line.h"
-
-size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
-{
-	size_t	counter;
-
-	counter = 0;
-	if (dstsize > 0)
-	{
-		while (src[counter] && counter < dstsize - 1)
-		{
-			dst[counter] = src[counter];
-			counter++;
-		}
-		dst[counter] = '\0';
-	}
-	return (ft_strlen(src));
-}
-
-char	*ft_substr(char const *s, unsigned int start, size_t len)
-{
-	char	*str;
-
-	if (start >= ft_strlen(s))
-	{
-		str = (char *)malloc(1);
-		*str = '\0';
-		return (str);
-	}
-	str = NULL;
-	s += start;
-	if (len > ft_strlen(s))
-		len = ft_strlen(s);
-	str = malloc(len + 1);
-	if (!(str))
-		return (NULL);
-	ft_strlcpy(str, s, len + 1);
-	return (str);
-}
-
-char	*ft_strjoin(char *str1, char *str2)
-{
-	int		i;
-	char	*n_str;
-
-	i = -1;
-	if (!str1)
-	{
-		str1 = malloc(1);
-		str1[0] = '\0';
-	}
-	n_str = malloc(ft_strlen(str1) + 2);
-	if (!n_str)
-		return (NULL);
-	while (str1[++i])
-		n_str[i] = str1[i];
-	n_str[i] = str2[0];
-	n_str[i + 1] = '\0';
-	free(str1);
-	return (n_str);
-}
 
 size_t	ft_strlen(const char *s)
 {
@@ -84,13 +24,48 @@ size_t	ft_strlen(const char *s)
 	return (counter);
 }
 
-char	*ft_strdup(const char *s1)
+char	*ft_strchr(const char *s, int c)
 {
-	char	*str;
+	int	s_len;
 
-	str = malloc((ft_strlen(s1) + 1) * sizeof(char));
-	if (!str)
+	if (!s)
+		return (0);
+	s_len = ft_strlen(s);
+	while (s_len >= 0)
+	{
+		if (*s == (char)c)
+			return ((char *)s);
+		s++;
+		s_len--;
+	}
+	return (NULL);
+}
+
+char	*ft_strjoin(char *s1, char *s2)
+{
+	unsigned int	i;
+	unsigned int	j;
+	char			*s3;
+
+	if (!s1)
+	{
+		s1 = (char *)malloc(1 * sizeof(char));
+		s1[0] = '\0';
+	}
+	if (!s1 || !s2)
 		return (NULL);
-	ft_strlcpy(str, s1, ft_strlen(s1) + 1);
-	return (str);
+	s3 = malloc(ft_strlen(s1) + ft_strlen(s2) + 1);
+	if (!s3)
+		return (NULL);
+	i = -1;
+	while (s1[++i] != 0)
+		s3[i] = s1[i];
+	j = -1;
+	while (s2[++j] != 0)
+	{
+		s3[i + j] = s2[j];
+	}
+	s3[i + j] = 0;
+	free(s1);
+	return (s3);
 }

@@ -6,85 +6,118 @@
 /*   By: jsaldana <jsaldana@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/18 19:25:15 by jsaldana          #+#    #+#             */
-/*   Updated: 2022/10/19 19:38:00 by jsaldana         ###   ########.fr       */
+/*   Updated: 2022/10/20 12:08:11 by jsaldana         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "get_next_line.h"
 
-static	t_fd	*ft_get_node(int fd, t_fd *node)
+char	*ft_remove_writed_line(char *line)
 {
-	if (!node)
+	int		counter;
+	int		counter_removed;
+	char	*new_removed_file;
+
+	counter = 0;
+	while (line[counter] && line[counter] != '\n')
+		counter++;
+	if (!line[counter])
 	{
-		node = malloc(sizeof(t_fd));
-		node->fd = fd;
+		free(line);
+		return (NULL);
 	}
-	return (node);
+	new_removed_file = malloc(sizeof(char) * (ft_strlen(line) - counter + 1));
+	if (!new_removed_file)
+		return (NULL);
+	counter++;
+	counter_removed = 0;
+	while (line[counter])
+		new_removed_file[counter_removed++] = line[counter++];
+	new_removed_file[counter_removed] = '\0';
+	free(line);
+	return (new_removed_file);
 }
 
-static	int	get_str(int fd, t_fd *node, int rd)
+char	*ft_write_readed_line(char *line)
 {
-	char	*buffer;
-	char	*aux;
+	int		counter;
+	char	*new_writed_line;
 
-	buffer = malloc(2);
-	node->str = malloc(1);
-	node->str[0] = 0;
-	while (rd > 0)
+	counter = 0;
+	if (!line[counter])
+		return (NULL);
+	while (line[counter] != '\n' && line[counter] != '\0')
+		counter++;
+	new_writed_line = malloc(sizeof(char) * counter + 2);
+	if (!new_writed_line)
+		return (NULL);
+	counter = 0;
+	while (line[counter] && line[counter] != '\n')
 	{
-		rd = read(fd, buffer, 1);
-		if (rd <= 0 && node->str[0] == 0)
-		{
-			free(buffer);
-			return (1);
-		}
-		else if (rd == 0)
-			break ;
-		buffer[1] = 0;
-		aux = ft_strjoin(node->str, buffer);
-		node->str = ft_strdup(aux);
-		free(aux);
-		if (node->str[ft_strlen(node->str) - 1] == '\n' )
-			break ;
+		new_writed_line[counter] = line[counter];
+		counter++;
 	}
-	free(buffer);
-	return (0);
+	if (line[counter] == '\n')
+	{
+		new_writed_line[counter] = line[counter];
+		counter++;
+	}
+	new_writed_line[counter] = '\0';
+	return (new_writed_line);
+}
+
+char	*ft_read_line(int fd, char *line)
+{
+	char	*buff;
+	int		rd_bytes;
+
+	buff = malloc(sizeof(char) * BUFFER_SIZE + 1);
+	if (!buff)
+		return (NULL);
+	rd_bytes = 1;
+	while (!ft_strchr(line, '\n') && rd_bytes != 0)
+	{
+		rd_bytes = read(fd, buff, BUFFER_SIZE);
+		if (rd_bytes == -1)
+		{
+			free(buff);
+			return (NULL);
+		}
+		buff[rd_bytes] = '\0';
+		line = ft_strjoin(line, buff);
+	}
+	free(buff);
+	return (line);
 }
 
 char	*get_next_line(int fd)
 {
-	static t_fd	*node;
-	int			eof;
+	static char	*line;
+	char		*write_readed_line;
 
 	if (fd < 0 || BUFFER_SIZE <= 0)
 		return (NULL);
-	node = ft_get_node(fd, node);
-	eof = get_str(fd, node, 1);
-	if (eof == 1)
-	{
-		free(node->str);
-		free(node);
-		node = NULL;
+	line = ft_read_line(fd, line);
+	if (!line)
 		return (NULL);
-	}
-	if (node->str[0] == 0 || node->eof == 1)
-		return (NULL);
-	return (node->str);
+	write_readed_line = ft_write_readed_line(line);
+	line = ft_remove_writed_line(line);
+	return (write_readed_line);
 }
 
-/* int	main(void)
+int	main(void)
 {
 	int		fd;
 	char	*print;
 
-	fd = open("./res/test1.txt", O_RDONLY);
+	fd = open("test1.txt", O_RDONLY);
 	print = get_next_line(fd);
-	printf("%s\n", print);
+	printf("%s", print);
 	print = get_next_line(fd);
-	printf("%s\n", print);
+	printf("%s", print);
 	print = get_next_line(fd);
-	printf("%s\n", print);
+	printf("%s", print);
 	free(print);
 	close(fd);
 	return (0);
-} */
+}
