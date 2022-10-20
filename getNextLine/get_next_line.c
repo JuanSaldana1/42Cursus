@@ -6,7 +6,7 @@
 /*   By: jsaldana <jsaldana@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/18 19:25:15 by jsaldana          #+#    #+#             */
-/*   Updated: 2022/10/20 12:08:11 by jsaldana         ###   ########.fr       */
+/*   Updated: 2022/10/20 12:09:58 by jsaldana         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -105,7 +105,7 @@ char	*get_next_line(int fd)
 	return (write_readed_line);
 }
 
-int	main(void)
+/* int	main(void)
 {
 	int		fd;
 	char	*print;
@@ -120,4 +120,4 @@ int	main(void)
 	free(print);
 	close(fd);
 	return (0);
-}
+} */
