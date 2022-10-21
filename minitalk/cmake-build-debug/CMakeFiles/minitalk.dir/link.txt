@@ -1,0 +1,1 @@
+/usr/bin/cc -g CMakeFiles/minitalk.dir/minitalk.c.o CMakeFiles/minitalk.dir/client.c.o CMakeFiles/minitalk.dir/server.c.o -o minitalk 

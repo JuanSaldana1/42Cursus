@@ -1,0 +1,3 @@
+/home/jsaldana/Documents/42Cursus/minitalk/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/jsaldana/Documents/42Cursus/minitalk/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/jsaldana/Documents/42Cursus/minitalk/cmake-build-debug/CMakeFiles/minitalk.dir

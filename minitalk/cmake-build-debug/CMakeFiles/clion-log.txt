@@ -1,0 +1,4 @@
+/home/jsaldana/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/212.5712.21/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_DEPENDS_USE_COMPILER=FALSE -G "CodeBlocks - Unix Makefiles" /home/jsaldana/Documents/42Cursus/minitalk
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/jsaldana/Documents/42Cursus/minitalk/cmake-build-debug
