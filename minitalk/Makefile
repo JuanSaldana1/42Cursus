@@ -1,20 +1,10 @@
-# **************************************************************************** #
-#                                                                              #
-#                                                         :::      ::::::::    #
-#    Makefile                                           :+:      :+:    :+:    #
-#                                                     +:+ +:+         +:+      #
-#    By: jsaldana <jsaldana@student.42.fr>          +#+  +:+       +#+         #
-#                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2022/10/24 11:42:32 by jsaldana          #+#    #+#              #
-#    Updated: 2022/10/24 12:18:00 by jsaldana         ###   ########.fr        #
-#                                                                              #
-# **************************************************************************** #
-
 NAMECLIENT		=	client
 NAMESERVER		=	server
 
 SRCCLIENT		=	client.c
 SRCSERVER		=	server.c
+OBJCLIENT		=	client.o
+OBJSERVER		=	server.o
 INC				=	minitalk.h
 
 # printf Variables:
@@ -25,24 +15,32 @@ CC				=	gcc
 FLAGS			=	-Wall -Werror -Wextra
 AR				=	ar rc
 
-OBJS	=	$(SRC:%.c=%.o)
-
 %.o: %.c
-	@$(CC) $(FLAGS) -c $< -o $@
+	@ $(CC) $(FLAGS) -c $< -o $@
 
-$(NAME): $(OBJS)
-	@$(AR) $@ $^
-	@echo "\033[92mLibrary Compiled"
+$(LIBFTPRINTF):
+	@ $(MAKE) -C $(LIBFTPRINTF_DIR)
 
-all: $(NAME)
+$(NAMECLIENT): $(OBJCLIENT) $(INC)
+	@ $(CC) $(FLAGS) $(LIBFTPRINTF) -o $@ $(OBJCLIENT)
+	@ echo "\033[92mClient ready.\033[0m"
+
+$(NAMESERVER): $(OBJSERVER) $(INC)
+	@ $(CC) $(FLAGS) $(LIBFTPRINTF) -o $@ $(OBJSERVER)
+	@ echo "\033[92mServer ready.\033[0m"
+
+all: $(LIBFTPRINTF) $(NAMECLIENT) $(NAMESERVER)
 
 clean:
-	@rm -f $(OBJS)
-	@echo "\033[93mAll .o Files Removed"
+	@ rm -f $(OBJCLIENT) $(OBJSERVER)
+	@ echo "\033[93mAll .o Files Removed\033[0m"
 
 fclean: clean
-	@rm -f $(NAME)
-	@echo "\033[95mLibrary Removed"
+	@ echo "\033[95mRemoving objects from printf...\e[0m"
+	@ $(MAKE) clean -C $(LIBFTPRINTF_DIR)
+	@ rm -f $(NAMECLIENT) $(NAMESERVER)
+	@ echo "\033[95mClient Removed\033[0m"
+	@ echo "\033[95mServer Removed\033[0m"
 
 re:	fclean all
 
