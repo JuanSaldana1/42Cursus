@@ -1,31 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   minitalk.h                                         :+:      :+:    :+:   */
+/*   ft_isdigit.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jsaldana <jsaldana@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/10/21 10:38:17 by                   #+#    #+#             */
-/*   Updated: 2022/10/24 11:40:38 by jsaldana         ###   ########.fr       */
+/*   Created: 2022/09/02 11:49:11 by jsaldana          #+#    #+#             */
+/*   Updated: 2022/10/24 11:40:08 by jsaldana         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef MINITALK_H
-# define MINITALK_H
+#include "minitalk.h"
 
-# include "printf/ft_printf.h"
-# include <signal.h>
-
-
-// CLIENT
-void	ft_send_bits(int pid, char i);
-
-// SERVER
-void	ft_handler(int signal);
-
-
-int	ft_isdigit(int c);
-
-int	ft_atoi(const char *str);
-
-#endif
+int	ft_isdigit(int c)
+{
+	if (c >= '0' && c <= '9')
+		return (1);
+	return (0);
+}

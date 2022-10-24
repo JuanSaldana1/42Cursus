@@ -1,31 +1,35 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   minitalk.h                                         :+:      :+:    :+:   */
+/*   ft_putnbr_hex.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jsaldana <jsaldana@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/10/21 10:38:17 by                   #+#    #+#             */
-/*   Updated: 2022/10/24 11:40:38 by jsaldana         ###   ########.fr       */
+/*   Created: 2022/10/03 18:27:10 by jsaldana          #+#    #+#             */
+/*   Updated: 2022/10/05 19:07:19 by jsaldana         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef MINITALK_H
-# define MINITALK_H
+#include "ft_printf.h"
 
-# include "printf/ft_printf.h"
-# include <signal.h>
+int	ft_putnbr_hex(size_t n, char const c)
+{
+	int	rtn;
 
-
-// CLIENT
-void	ft_send_bits(int pid, char i);
-
-// SERVER
-void	ft_handler(int signal);
-
-
-int	ft_isdigit(int c);
-
-int	ft_atoi(const char *str);
-
-#endif
+	rtn = 0;
+	if (c == 'x' || c == 'p')
+	{
+		if (n >= 16)
+			rtn += ft_putnbr_hex(n / 16, c);
+		rtn += ft_putchar(LOWXBASE[n % 16]);
+		return (rtn);
+	}
+	if (c == 'X')
+	{
+		if (n >= 16)
+			rtn += ft_putnbr_hex(n / 16, c);
+		rtn += ft_putchar(UPPERXBASE[n % 16]);
+		return (rtn);
+	}
+	return (0);
+}

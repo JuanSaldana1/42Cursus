@@ -1,31 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   minitalk.h                                         :+:      :+:    :+:   */
+/*   ft_putnbr_u.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jsaldana <jsaldana@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/10/21 10:38:17 by                   #+#    #+#             */
-/*   Updated: 2022/10/24 11:40:38 by jsaldana         ###   ########.fr       */
+/*   Created: 2022/10/03 18:20:43 by jsaldana          #+#    #+#             */
+/*   Updated: 2022/10/03 18:22:45 by jsaldana         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef MINITALK_H
-# define MINITALK_H
+#include "ft_printf.h"
 
-# include "printf/ft_printf.h"
-# include <signal.h>
+unsigned int	ft_putnbr_u(unsigned int n)
+{
+	int		rtn;
 
-
-// CLIENT
-void	ft_send_bits(int pid, char i);
-
-// SERVER
-void	ft_handler(int signal);
-
-
-int	ft_isdigit(int c);
-
-int	ft_atoi(const char *str);
-
-#endif
+	rtn = 0;
+	if (n > 9)
+		rtn += ft_putnbr_u(n / 10);
+	rtn += ft_putchar((n % 10) + '0');
+	return (rtn);
+}
