@@ -20,6 +20,10 @@
 # define LOWXBASE "0123456789abcdef"
 # define UPPERXBASE "0123456789ABCDEF"
 
+int				ft_atoi(const char *str);
+
+int				ft_isdigit(int c);
+
 /**
  * @brief Function that prints the passed params.\n
  * Every time it founds an %, counts one more argument

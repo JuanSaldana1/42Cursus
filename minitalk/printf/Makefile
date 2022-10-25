@@ -3,7 +3,8 @@ NAME	=	libftprintf.a
 SRC		=	ft_printf.c ft_putchar.c \
 			ft_putnbr.c ft_putnbr_hex.c \
 			ft_putnbr_u.c ft_putstr.c \
-			ft_strlen.c
+			ft_strlen.c ft_atoi.c \
+			ft_isdigit.c
 
 CC		=	gcc
 

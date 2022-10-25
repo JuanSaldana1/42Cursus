@@ -13,19 +13,12 @@
 #ifndef MINITALK_H
 # define MINITALK_H
 
-# include "printf/ft_printf.h"
 # include <signal.h>
-
 
 // CLIENT
 void	ft_send_bits(int pid, char i);
 
 // SERVER
 void	ft_handler(int signal);
-
-
-int	ft_isdigit(int c);
-
-int	ft_atoi(const char *str);
 
 #endif

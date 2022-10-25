@@ -57,11 +57,3 @@ int	ft_printf(char const *src, ...)
 	va_end(parameters);
 	return (count);
 }
-
-/* int	main(void)
-{
-	char	*str = "Hola Mundo";
-
-	printf("%i", ft_printf("%s\n", str));
-	return (0);
-} */
