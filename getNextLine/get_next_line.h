@@ -6,7 +6,7 @@
 /*   By: jsaldana <jsaldana@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/18 19:26:21 by jsaldana          #+#    #+#             */
-/*   Updated: 2022/10/26 11:19:35 by jsaldana         ###   ########.fr       */
+/*   Updated: 2022/10/26 11:53:01 by jsaldana         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@
 # include <stdio.h>
 
 /**
- * @brief 
+ * @brief Creates a buffer, 
  * 
  * @param fd File descriptor.
  * @param line String passed.
