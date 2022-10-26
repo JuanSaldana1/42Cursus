@@ -13,7 +13,7 @@
 #include "minitalk.h"
 #include "printf/ft_printf.h"
 
-void	ft_send_bits(int pid, char i)
+static void	ft_send_bits(int pid, char i)
 {
 	int	bit;
 
@@ -29,7 +29,7 @@ void	ft_send_bits(int pid, char i)
 	}
 }
 
-int	main(int argc, char **argv)
+int	main(int argc, char *argv[])
 {
 	int	pid;
 	int	i;

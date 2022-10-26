@@ -15,10 +15,4 @@
 
 # include <signal.h>
 
-// CLIENT
-void	ft_send_bits(int pid, char i);
-
-// SERVER
-void	ft_handler(int signal);
-
 #endif

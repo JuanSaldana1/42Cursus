@@ -6,7 +6,7 @@
 /*   By: jsaldana <jsaldana@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/18 19:26:21 by jsaldana          #+#    #+#             */
-/*   Updated: 2022/10/20 12:06:42 by jsaldana         ###   ########.fr       */
+/*   Updated: 2022/10/26 11:19:35 by jsaldana         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,6 +22,12 @@
 # include <stdlib.h>
 # include <stdio.h>
 
+/**
+ * @brief 
+ * 
+ * @param fd File descriptor.
+ * @param line String passed.
+ */
 char	*ft_read_line(int fd, char *line);
 char	*ft_write_readed_line(char *line);
 char	*ft_remove_writed_line(char *line);

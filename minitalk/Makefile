@@ -1,35 +1,24 @@
-NAMECLIENT		=	client
-NAMESERVER		=	server
+# Library Name #
+NAME			=
+CLIENT			=	client
+SERVER			=	server
 
 SRCCLIENT		=	client.c
 SRCSERVER		=	server.c
 OBJCLIENT		=	client.o
 OBJSERVER		=	server.o
-INC				=	minitalk.h
-
-# printf Variables:
-LIBFTPRINTF		=	printf/libftprintf.a
-LIBFTPRINTF_DIR	=	printf
+INC				=	printf/ft_printf.h
 
 CC				=	gcc
 FLAGS			=	-Wall -Werror -Wextra
 AR				=	ar rc
 
+$(NAME): all
+
 %.o: %.c
 	@ $(CC) $(FLAGS) -c $< -o $@
 
-$(LIBFTPRINTF):
-	@ $(MAKE) -C $(LIBFTPRINTF_DIR)
-
-$(NAMECLIENT): $(OBJCLIENT) $(INC)
-	@ $(CC) $(FLAGS) $(LIBFTPRINTF) -o $@ $(OBJCLIENT)
-	@ echo "\033[92mClient ready.\033[0m"
-
-$(NAMESERVER): $(OBJSERVER) $(INC)
-	@ $(CC) $(FLAGS) $(LIBFTPRINTF) -o $@ $(OBJSERVER)
-	@ echo "\033[92mServer ready.\033[0m"
-
-all: $(LIBFTPRINTF) $(NAMECLIENT) $(NAMESERVER)
+all: $(SERVER) $(CLIENT)
 
 clean:
 	@ rm -f $(OBJCLIENT) $(OBJSERVER)
