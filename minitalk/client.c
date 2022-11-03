@@ -11,7 +11,6 @@
 /* ************************************************************************** */
 
 #include "minitalk.h"
-#include "printf/ft_printf.h"
 
 int	main(int argc, char *argv[])
 {
