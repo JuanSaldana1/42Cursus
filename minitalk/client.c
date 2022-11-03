@@ -6,7 +6,7 @@
 /*   By: jsaldana <jsaldana@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/21 10:27:17 by                   #+#    #+#             */
-/*   Updated: 2022/10/24 11:27:35 by jsaldana         ###   ########.fr       */
+/*   Updated: 2022/11/03 11:12:43 by jsaldana         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,5 +14,12 @@
 
 int	main(int argc, char *argv[])
 {
-	
+	char	*pid;
+
+	if (argc == 3)
+	{
+		pid = argv[1];
+		printf("%s", pid);
+	}
+	return (0);
 }
