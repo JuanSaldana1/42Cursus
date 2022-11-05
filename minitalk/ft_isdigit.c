@@ -1,32 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   server.c                                           :+:      :+:    :+:   */
+/*   ft_isdigit.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jsaldana <jsaldana@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/10/21 10:31:31 by                   #+#    #+#             */
-/*   Updated: 2022/11/05 14:00:15 by jsaldana         ###   ########.fr       */
+/*   Created: 2022/09/02 11:49:11 by jsaldana          #+#    #+#             */
+/*   Updated: 2022/11/05 14:06:41 by jsaldana         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "minitalk.h"
 
-void sig_handler(int signum)
+int	ft_isdigit(int c)
 {
-  printf("\nSERVER RECIEVED SIGNAL (%d)\n", signum);
-}
-
-int	main(void)
-{
-	int	pid;
-	// struct sigaction	s_sigaction;
-
-	pid = getpid();
-	ft_putnbr(pid);
-	signal(SIGUSR1, sig_handler);
-	// s_sigaction.sa_flags = SA_SIGINFO;
-	while (1)
-		sleep(1);
+	if (c >= '0' && c <= '9')
+		return (1);
 	return (0);
 }

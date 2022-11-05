@@ -1,32 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   server.c                                           :+:      :+:    :+:   */
+/*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jsaldana <jsaldana@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/10/21 10:31:31 by                   #+#    #+#             */
-/*   Updated: 2022/11/05 14:00:15 by jsaldana         ###   ########.fr       */
+/*   Created: 2022/09/18 09:37:02 by jsaldana          #+#    #+#             */
+/*   Updated: 2022/11/05 14:04:59 by jsaldana         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "minitalk.h"
 
-void sig_handler(int signum)
+int	ft_atoi(const char *str)
 {
-  printf("\nSERVER RECIEVED SIGNAL (%d)\n", signum);
-}
+	int	nb;
+	int	sign;
 
-int	main(void)
-{
-	int	pid;
-	// struct sigaction	s_sigaction;
-
-	pid = getpid();
-	ft_putnbr(pid);
-	signal(SIGUSR1, sig_handler);
-	// s_sigaction.sa_flags = SA_SIGINFO;
-	while (1)
-		sleep(1);
-	return (0);
+	nb = 0;
+	sign = 1;
+	while ((9 <= *str && *str <= 13) || *str == ' ')
+		str++;
+	while (ft_isdigit(*str))
+	{
+		nb = nb * 10 + (*str - '0');
+		str++;
+	}
+	return (nb * sign);
 }

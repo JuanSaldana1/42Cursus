@@ -6,22 +6,18 @@
 /*   By: jsaldana <jsaldana@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/21 10:27:17 by                   #+#    #+#             */
-/*   Updated: 2022/11/03 12:48:26 by jsaldana         ###   ########.fr       */
+/*   Updated: 2022/11/05 14:26:23 by jsaldana         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "minitalk.h"
 
 
-int	main(int argc, char *argv[])
+int	main(int argc, const char *argv[])
 {
-	char	*pid;
-	kill(11695, SIGUSR1);
-	
 	if (argc == 3)
 	{
-		pid = argv[1];
-		printf("%s", pid);
+		kill(ft_atoi(argv[1]), SIGUSR2);
 	}
 	return (0);
 }
