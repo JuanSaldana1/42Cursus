@@ -6,13 +6,13 @@
 /*   By: jsaldana <jsaldana@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/21 10:27:17 by                   #+#    #+#             */
-/*   Updated: 2022/11/30 19:36:49 by jsaldana         ###   ########.fr       */
+/*   Updated: 2022/11/30 19:39:56 by jsaldana         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "minitalk.h"
 #include <stdio.h>
-void showbits (int pid, unsigned char n)
+void showbits(int pid, unsigned char n)
 {
 	int	i = 8;
 	while (i--)
@@ -24,6 +24,7 @@ void showbits (int pid, unsigned char n)
 	}
 	printf("\n");
 }
+
 int	main(int argc, const char *argv[])
 {
 	if (argc == 3)
