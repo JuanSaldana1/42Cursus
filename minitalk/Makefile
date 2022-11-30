@@ -10,9 +10,21 @@ SRC			=	ft_putchar.c ft_putnbr.c \
 				ft_atoi.c ft_isdigit.c
 
 INC			=	-I minitalk.h
+RM			:=	rm -rf
 
 client:
 	@ $(CFLAGS) $(SRCCLIENT) $(SRC) $(INC) -o $(NAMECLIENT)
 
 server:
 	@ $(CFLAGS) $(SRCSERVER) $(SRC) $(INC) -o $(NAMESERVER)
+
+clean:
+	$(RM) server client
+
+fclean: clean
+	make fclean -C ft_printf
+	$(RM) server client
+
+re: fclean all
+
+.PHONY: all clean fclean re
