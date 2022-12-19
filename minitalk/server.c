@@ -6,7 +6,7 @@
 /*   By: jsaldana <jsaldana@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/21 10:31:31 by                   #+#    #+#             */
-/*   Updated: 2022/11/30 19:30:45 by jsaldana         ###   ########.fr       */
+/*   Updated: 2022/12/01 19:39:18 by jsaldana         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,10 +14,10 @@
 
 void sig_handler(int signum, siginfo_t *info, void *context)
 {
+	//unsigned char	c;
 	(void)info;
 	(void)context;
-	
-	
+	//c |= (signal == SIGUSR2);
 	if (signum == SIGUSR1)
 	{
 		printf("1");
@@ -35,11 +35,12 @@ void sig_handler(int signum, siginfo_t *info, void *context)
 
 int	main(void)
 {
-	int					pid;
+	pid_t				pid;
 	struct sigaction	sig_action;
 
 	pid = getpid();
 	ft_putnbr(pid);
+	sigemptyset(&sig_action.sa_mask);
 	sig_action.sa_flags = SA_SIGINFO;
 	sig_action.sa_sigaction = sig_handler;
 	sigaction(SIGUSR1, &sig_action, NULL);

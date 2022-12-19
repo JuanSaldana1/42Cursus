@@ -1,28 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   minitalk.h                                         :+:      :+:    :+:   */
+/*   tutorial.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jsaldana <jsaldana@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/10/21 10:38:17 by                   #+#    #+#             */
-/*   Updated: 2022/12/01 19:28:14 by jsaldana         ###   ########.fr       */
+/*   Created: 2022/12/19 10:44:26 by jsaldana          #+#    #+#             */
+/*   Updated: 2022/12/19 11:27:45 by jsaldana         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef MINITALK_H
-# define MINITALK_H
+#include "minilibx/mlx.h"
 
-# include <signal.h>
-# include <unistd.h>
-# include <stdio.h>
+int main()
+{
+    void *mlx = mlx_init();
+    void *win = mlx_new_window(mlx, 640, 360, "Tutorial Window - Draw Pixel");
 
+    mlx_pixel_put(mlx, win, 640/2, 360/2, 0xFFFFFF);
 
-int		ft_putnbr(int n);
-int		ft_putchar(const char c);
-int		ft_atoi(const char *str);
-int		ft_isdigit(int c);
-void	sig_handler(int signum, siginfo_t *info, void *context);
-void	showbits(int pid, char n);
-
-#endif
+    mlx_loop(mlx);
+}

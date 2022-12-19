@@ -18,12 +18,12 @@ client:
 server:
 	@ $(CFLAGS) $(SRCSERVER) $(SRC) $(INC) -o $(NAMESERVER)
 
+all: server client
+
 clean:
-	$(RM) server client
+	@ $(RM) server client
 
 fclean: clean
-	make fclean -C ft_printf
-	$(RM) server client
 
 re: fclean all
 
